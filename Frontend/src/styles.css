@@ -1,0 +1,23 @@
+/*Globales*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(33, 50, 146);
+}
+body main h1 {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  margin: 30px;
+}/*# sourceMappingURL=styles.css.map */
