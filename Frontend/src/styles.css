@@ -12,12 +12,19 @@
 }
 
 body {
+  margin: 2vw;
   background-color: rgb(33, 50, 146);
+}
+body .Changes-Color {
+  float: right;
+}
+body .Changes-Color input {
+  size: 200px;
 }
 body main h1 {
   color: white;
   text-align: center;
-  font-size: 2vw;
+  font-size: 5vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   margin: 30px;
 }/*# sourceMappingURL=styles.css.map */

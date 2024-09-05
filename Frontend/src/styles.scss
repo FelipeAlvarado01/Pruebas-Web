@@ -18,12 +18,23 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
    }
 
 body{
+    margin: 2vw;
     background-color: rgb(33, 50, 146);
+    .Changes-Color{
+        float: right;
+
+        input{
+            size: 200px;
+        }
+    }
+
+
     main{
+        //height: 100vh;
         h1{
             color: white;
             text-align: center;
-            font-size: 2vw;
+            font-size: 5vw;
             font-family: $typographyPoppins;
             margin: 30px;
 
