@@ -18,26 +18,49 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
    }
 
 body{
+    display: flex;
+    flex-direction: column;
+    
     margin: 2vw;
     background-color: rgb(33, 50, 146);
+
     .Changes-Color{
+
+        display: flex;
+        align-items: center;
+        align-self: end;
         float: right;
 
-        input{
-            size: 200px;
+        i{
+            padding: 0 10px 0;
+        }
+
+        .slider-change {
+            -webkit-appearance: none; 
+            width: 20%;
+            height: 20px;
+            border-radius: 20px; 
+            background: #F28241;
+            outline: none; 
+        }
+          .slider-change::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #F2F2F0;
+            cursor: pointer;
         }
     }
 
 
     main{
-        //height: 100vh;
         h1{
             color: white;
             text-align: center;
             font-size: 5vw;
             font-family: $typographyPoppins;
-            margin: 30px;
-
+            margin: 20px 0;
         }
     }
 
