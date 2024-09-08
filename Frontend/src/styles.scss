@@ -20,49 +20,61 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
 body{
     display: flex;
     flex-direction: column;
-    
-    margin: 2vw;
+    width: 100%;
+    //margin: 2vw;
     
 
-    .Changes-Color{
+    header{
 
         display: flex;
-        align-items: center;
-        align-self: end;
-        float: right;
+        flex-direction: column;
+        width: 100%;
+        //padding: 1vh;
         background-color: rgb(33, 50, 146);
 
-        i{
-            padding: 0 10px 0;
+
+        .switch-changes_color{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding: 3vh 0 0 0;
+            //width: auto; 
+            
+            i{
+                padding: 0 10px 0;
+            }
+    
+            .slider-change {
+                -webkit-appearance: none; 
+                width: 20%;
+                height: 20px;
+                border-radius: 20px; 
+                background: #F28241;
+                outline: none; 
+            }
+              .slider-change::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #F2F2F0;
+                cursor: pointer;
+            }
         }
 
-        .slider-change {
-            -webkit-appearance: none; 
-            width: 20%;
-            height: 20px;
-            border-radius: 20px; 
-            background: #F28241;
-            outline: none; 
+        .main-title{
+            display: flex;
+            align-self: center;
+            width: auto;
+            h1{
+                color: white;
+                text-align: center;
+                font-size: 5vw;
+                font-family: $typographyPoppins;
+                margin: 20px 0;
+            }
         }
-          .slider-change::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #F2F2F0;
-            cursor: pointer;
-        }
-    }
 
-
-    main{
-        h1{
-            color: white;
-            text-align: center;
-            font-size: 5vw;
-            font-family: $typographyPoppins;
-            margin: 20px 0;
-        }
     }
     
     .My-Description{

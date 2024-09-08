@@ -16,7 +16,7 @@ rangeInput.addEventListener('input', function() {
     }*/
     const colorValue = rangeInput.value;
 
-    document.body.style.backgroundColor = interpolateColor(colorValue);
+    document.querySelector('header').style.backgroundColor = interpolateColor(colorValue);
     //console.log(colorValue);
     console.log(interpolateColor(colorValue));
   });
