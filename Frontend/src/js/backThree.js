@@ -1,6 +1,6 @@
 import * as THREE from "../../node_modules/three/build/three.module.js";
 
-document.addEventListener('DOMContentLoaded', function() {
+//document.addEventListener('DOMContentLoaded', function() {
     const threeContainer = document.getElementById('three-container');
     
     //console.log(threeContainer.clientHeight);
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
-
     camera.position.z = 5;
     scene.background = new THREE.Color(0xE83D02);
 
@@ -31,4 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     animate();
-});
+//});

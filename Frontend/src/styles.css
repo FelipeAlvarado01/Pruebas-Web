@@ -22,6 +22,8 @@ body .three-container {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   background-color: transparent;
 }
 body .three-container .switch-changes_color {
@@ -29,6 +31,7 @@ body .three-container .switch-changes_color {
   align-items: center;
   margin-left: auto;
   padding: 3vh 0 0 0;
+  z-index: 2;
   width: auto;
 }
 body .three-container .switch-changes_color i {
