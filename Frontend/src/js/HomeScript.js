@@ -17,6 +17,6 @@ rangeInput.addEventListener('input', function() {
     const r = Math.round(initialColor.r + (finalColor.r - initialColor.r) * (value / 100));
     const g = Math.round(initialColor.g + (finalColor.g - initialColor.g) * (value / 100));
     const b = Math.round(initialColor.b + (finalColor.b - initialColor.b) * (value / 100));
-    //console.log("rgb");
+     //console.log("rgb");
     return `rgb(${r}, ${g}, ${b})`;
   }
