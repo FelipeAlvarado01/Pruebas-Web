@@ -19,13 +19,17 @@
   left: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 body .three-container canvas {
-  width: 100vw !important;
+  max-width: 100% !important;
   height: 100vh !important;
   position: absolute;
   z-index: 1;
@@ -33,7 +37,7 @@ body .three-container canvas {
 body .three-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -57,6 +61,7 @@ body .three-container .switch-changes_color .slider-change {
   border-radius: 20px;
   background: #F28241;
   outline: none;
+  box-shadow: 2px 2px 4px #2b2a2a;
 }
 body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -80,22 +85,52 @@ body .three-container .main-title h1 {
   font-size: 5vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
 }
+body .three-container .down-button {
+  display: flex;
+  padding: 0px;
+  align-self: center;
+  align-items: end;
+  z-index: 2;
+  height: 100vh;
+  max-width: 100%;
+}
+body .three-container .down-button i {
+  padding: 30px 10px 5px;
+  background-color: #0f2972;
+  background-image: radial-gradient(circle at center, rgb(7, 66, 138) 50%, transparent 50%);
+  background-repeat: no-repeat;
+  transition: background-size 0.1s;
+  background-size: 0 0;
+  background-position: 50% 50%;
+  border-radius: 20px;
+  margin-bottom: 3vh;
+  box-shadow: 2px 2px 4px #000000;
+  transition: transform 0.5s ease;
+}
+body .three-container .down-button i:hover {
+  transform: scale(1.05);
+  background-size: 200% 200%;
+  cursor: pointer;
+}
 body main .My-Description {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
+  position: absolute;
+  height: 100vh;
   background-color: white;
 }
 body main .My-Description .My-Photo {
-  padding: 2vh;
-  max-width: 40%;
-  height: 5%;
+  padding: 1vh;
+  max-width: 50%;
+  height: 50%;
   margin: 5%;
   border-radius: 50%;
 }
 body main .My-Description p {
   padding: 2vh;
+  max-width: 50%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   margin: 5%;
 }/*# sourceMappingURL=styles.css.map */

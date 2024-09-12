@@ -23,7 +23,7 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
         new THREE.MeshBasicMaterial({ color: 0x00ffff })  // Cara 6 - cian
     ];    
     const cube = new THREE.Mesh(geometry, materials);
-    cube.position.set(0, -5 , 0);
+    cube.position.set(0, 0 , 0);
     scene.add(cube);
 
     const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
@@ -36,8 +36,8 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
 
     function animate() {
         requestAnimationFrame(animate);
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+        cube.rotation.x += 0.004;
+        cube.rotation.y += 0.004;
         renderer.render(scene, camera);
         //console.log("hola");
         //console.log(threeContainer.clientWidth);
