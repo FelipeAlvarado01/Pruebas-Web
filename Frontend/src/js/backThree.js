@@ -15,12 +15,12 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
 
     const geometry = new THREE.BoxGeometry();
     const materials = [
-        new THREE.MeshBasicMaterial({ color: 0xff0000 }), // Cara 1 - rojo
-        new THREE.MeshBasicMaterial({ color: 0x00ff00 }), // Cara 2 - verde
-        new THREE.MeshBasicMaterial({ color: 0x0000ff }), // Cara 3 - azul
-        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Cara 4 - amarillo
-        new THREE.MeshBasicMaterial({ color: 0xff00ff }), // Cara 5 - magenta
-        new THREE.MeshBasicMaterial({ color: 0x00ffff })  // Cara 6 - cian
+        new THREE.MeshBasicMaterial({ color: 0xff0000 }), 
+        new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
+        new THREE.MeshBasicMaterial({ color: 0x0000ff }), 
+        new THREE.MeshBasicMaterial({ color: 0xffff00 }), 
+        new THREE.MeshBasicMaterial({ color: 0xff00ff }), 
+        new THREE.MeshBasicMaterial({ color: 0x00ffff }) 
     ];    
     const cube = new THREE.Mesh(geometry, materials);
     cube.position.set(0, 0 , 0);

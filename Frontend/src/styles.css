@@ -59,9 +59,12 @@ body .three-container .switch-changes_color .slider-change {
   width: 20%;
   height: 20px;
   border-radius: 20px;
-  background: #F28241;
+  background: rgb(242, 130, 65);
   outline: none;
   box-shadow: 2px 2px 4px #2b2a2a;
+}
+body .three-container .switch-changes_color .slider-change:hover {
+  background: rgb(236, 150, 101);
 }
 body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -70,6 +73,9 @@ body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb
   border-radius: 50%;
   background: #F2F2F0;
   cursor: pointer;
+}
+body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb:hover {
+  background: rgb(230, 223, 223);
 }
 body .three-container .main-title {
   display: flex;
@@ -96,15 +102,15 @@ body .three-container .down-button {
 }
 body .three-container .down-button i {
   padding: 30px 10px 5px;
-  background-color: #0f2972;
-  background-image: radial-gradient(circle at center, rgb(7, 66, 138) 50%, transparent 50%);
+  background-color: rgb(32, 46, 128);
+  background-image: radial-gradient(circle at center, rgb(50, 70, 116) 50%, transparent 50%);
   background-repeat: no-repeat;
   transition: background-size 0.1s;
   background-size: 0 0;
   background-position: 50% 50%;
   border-radius: 20px;
   margin-bottom: 3vh;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 4px 4px #000000;
   transition: transform 0.5s ease;
 }
 body .three-container .down-button i:hover {
