@@ -15,28 +15,29 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
     padding: 0;
     font-size: 100%;
     box-sizing: border-box;
-   }
+}
 
-   #three-container canvas { //Para que la escena de three se muestre en la posicion deseada
+#three-container canvas {
+    //Para que la escena de three se muestre en la posicion deseada
     width: 100vw !important;
     height: 100vh !important;
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 100%;
     //overflow-x: hidden;
     //margin: 2vw;
-    
-    
+
+
     .three-container canvas {
         max-width: 100% !important;
         height: 100vh !important;
@@ -46,7 +47,7 @@ body{
         z-index: 1;
     }
 
-    .three-container{
+    .three-container {
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -56,99 +57,114 @@ body{
         //position: relative;
         z-index: 1; //Maneja la posicion del canvas
         background-color: rgb(33, 50, 146);
- 
+        border-bottom: 2px solid black;
+        filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
 
-        .switch-changes_color{
+
+
+        .switch-changes_color {
             display: flex;
             align-items: center;
             margin-left: auto;
             padding: 3vh 0 0 0;
             z-index: 2;
-            width: auto; 
-            
-            i{
+            width: auto;
+
+            i {
                 padding: 0 10px 0;
-                
             }
 
             .slider-change {
-                -webkit-appearance: none; 
+                -webkit-appearance: none;
                 width: 20%;
                 height: 20px;
-                border-radius: 20px; 
+                border-radius: 20px;
                 background: rgb(242, 130, 65);
-                outline: none; 
-                box-shadow: 2px 2px 4px #2b2a2a;
+                outline: none;
+                border: 1px solid black;
+                filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
 
+                //box-shadow: 2px 2px 4px #2b2a2a;
             }
-            
+
             .slider-change:hover {
                 background: rgb(236, 150, 101);
             }
 
-              .slider-change::-webkit-slider-thumb {
+            .slider-change::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
                 background: #F2F2F0;
+                border: 2px solid black;
+                filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px -1px black);
                 cursor: pointer;
             }
 
-            .slider-change::-webkit-slider-thumb:hover{
+            .slider-change::-webkit-slider-thumb:hover {
                 background: rgb(230, 223, 223);
             }
         }
 
-        .main-title{
+        .main-title {
             display: flex;
             flex-direction: column;
             align-self: center;
             width: auto;
             margin: 20px 0;
-            z-index: 2; 
-            
-            h1{
+            z-index: 2;
+
+            h1 {
                 color: white;
+                //border: 2px solid black;
                 text-align: center;
                 font-size: 5vw;
                 font-family: $typographyPoppins;
+                text-shadow:
+                    -1.5px -1px 0px black,
+                    1.3px -1px 0px black,
+                    -1.1px 1px 0px black,
+                    1.5px 1px 0px black;
             }
         }
 
-        .down-button{
+        .down-button {
             display: flex;
             padding: 0px;
             align-self: center;
             align-items: end;
             z-index: 2;
             height: 100vh;
-            max-width: 100%;           
-            
-            i{
+            max-width: 100%;
+
+            i {
                 padding: 30px 10px 5px;
                 background-color: rgb(32, 46, 128);
-                background-image: radial-gradient(circle at center,rgb(50, 70, 116) 50%,transparent 50%);
+                background-image: radial-gradient(circle at center, rgb(50, 70, 116) 50%, transparent 50%);
                 background-repeat: no-repeat;
                 transition: background-size .1s;
                 background-size: 0 0;
                 background-position: 50% 50%;
                 border-radius: 20px;
                 margin-bottom: 3vh;
-                box-shadow: 2px 4px 4px #000000;
-                transition: transform 0.5s ease; 
+                border: 1px solid black;
+                //box-shadow: 2px 4px 4px #000000;
+                //box-shadow: 3px 3px 0px 0px black, -3px -3px 0px 0px black;
+                filter: drop-shadow(0.3px 0.3px 0px black) drop-shadow(-0.3px -0.3px 0px black);
+                transition: transform 0.5s ease;
             }
 
             i:hover {
                 transform: scale(1.05);
                 background-size: 200% 200%;
-                cursor: pointer; 
+                cursor: pointer;
             }
         }
     }
 
-    main{
-        .My-Description{
+    main {
+        .My-Description {
             display: flex;
             flex-direction: row;
             align-content: center;
@@ -157,15 +173,19 @@ body{
             height: 100vh;
             background-color: white;
 
-            .My-Photo{
+            .My-Photo {
                 padding: 1vh;
                 max-width: 50%;
                 height: 50%;
                 margin: 5%;
                 border-radius: 50%;
+                border: 2px solid black;
+                box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
+                //filter: drop-shadow(1px 1px 0px black) drop-shadow(-1px -1px 0px black);
+
             }
 
-            p{
+            p {
                 padding: 2vh;
                 max-width: 50%;
                 font-family: $typographyPoppins;

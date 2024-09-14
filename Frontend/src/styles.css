@@ -42,6 +42,8 @@ body .three-container {
   position: relative;
   z-index: 1;
   background-color: rgb(33, 50, 146);
+  border-bottom: 2px solid black;
+  filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
 }
 body .three-container .switch-changes_color {
   display: flex;
@@ -61,7 +63,8 @@ body .three-container .switch-changes_color .slider-change {
   border-radius: 20px;
   background: rgb(242, 130, 65);
   outline: none;
-  box-shadow: 2px 2px 4px #2b2a2a;
+  border: 1px solid black;
+  filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
 }
 body .three-container .switch-changes_color .slider-change:hover {
   background: rgb(236, 150, 101);
@@ -72,6 +75,8 @@ body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb
   height: 20px;
   border-radius: 50%;
   background: #F2F2F0;
+  border: 2px solid black;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px -1px black);
   cursor: pointer;
 }
 body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb:hover {
@@ -90,6 +95,7 @@ body .three-container .main-title h1 {
   text-align: center;
   font-size: 5vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  text-shadow: -1.5px -1px 0px black, 1.3px -1px 0px black, -1.1px 1px 0px black, 1.5px 1px 0px black;
 }
 body .three-container .down-button {
   display: flex;
@@ -110,7 +116,8 @@ body .three-container .down-button i {
   background-position: 50% 50%;
   border-radius: 20px;
   margin-bottom: 3vh;
-  box-shadow: 2px 4px 4px #000000;
+  border: 1px solid black;
+  filter: drop-shadow(0.3px 0.3px 0px black) drop-shadow(-0.3px -0.3px 0px black);
   transition: transform 0.5s ease;
 }
 body .three-container .down-button i:hover {
@@ -133,6 +140,8 @@ body main .My-Description .My-Photo {
   height: 50%;
   margin: 5%;
   border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
 }
 body main .My-Description p {
   padding: 2vh;
