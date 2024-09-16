@@ -60,23 +60,22 @@ body .three-container .switch-changes_color .slider-change {
   -webkit-appearance: none;
   width: 20%;
   height: 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   background: rgb(242, 130, 65);
   outline: none;
-  border: 1px solid black;
-  filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
+  border: 2px solid black;
 }
 body .three-container .switch-changes_color .slider-change:hover {
   background: rgb(236, 150, 101);
 }
 body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
   background: #F2F2F0;
   border: 2px solid black;
-  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px -1px black);
+  margin-top: 0.2vh;
   cursor: pointer;
 }
 body .three-container .switch-changes_color .slider-change::-webkit-slider-thumb:hover {
@@ -95,7 +94,7 @@ body .three-container .main-title h1 {
   text-align: center;
   font-size: 5vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  text-shadow: -1.5px -1px 0px black, 1.3px -1px 0px black, -1.1px 1px 0px black, 1.5px 1px 0px black;
+  text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
 body .three-container .down-button {
   display: flex;
@@ -116,8 +115,7 @@ body .three-container .down-button i {
   background-position: 50% 50%;
   border-radius: 20px;
   margin-bottom: 3vh;
-  border: 1px solid black;
-  filter: drop-shadow(0.3px 0.3px 0px black) drop-shadow(-0.3px -0.3px 0px black);
+  border: 2px solid black;
   transition: transform 0.5s ease;
 }
 body .three-container .down-button i:hover {
@@ -135,12 +133,11 @@ body main .My-Description {
   background-color: white;
 }
 body main .My-Description .My-Photo {
-  padding: 1vh;
   max-width: 50%;
   height: 50%;
   margin: 5%;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 3px solid black;
   box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
 }
 body main .My-Description p {
