@@ -93,12 +93,12 @@ body {
 
             .slider-change::-webkit-slider-thumb {
                 -webkit-appearance: none;
-                width: 15px;
-                height: 15px;
+                width: 20px;
+                height: 20px;
                 border-radius: 100%;
                 background: #F2F2F0;
                 border: 2px solid black;
-                margin-top: 0.2vh;
+                //margin:10px;
                 //filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px -1px black);
                 cursor: pointer;
             }
@@ -168,6 +168,7 @@ body {
         .My-Description {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-content: center;
             align-items: center;
             position: absolute;
@@ -190,6 +191,7 @@ body {
                 padding: 2vh;
                 max-width: 50%;
                 font-family: $typographyPoppins;
+                font-size: 2vw;
                 margin: 5%;
             }
         }
