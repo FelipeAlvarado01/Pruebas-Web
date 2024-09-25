@@ -24,7 +24,7 @@ function interpolateColor(value,initialColor,finalColor) { //Funcion de para cam
 }
 
 /*--------------------MUEVE EL BOTON HACIA ABAJO----------------------------*/
-const icon = document.querySelector('.down-button i');
+const icon = document.querySelector('.down-button img');
 
 icon.addEventListener('click', function () {
   icon.style.transition = 'transform 0.1s ease';// Agrega una clase para deslizar hacia abajo
