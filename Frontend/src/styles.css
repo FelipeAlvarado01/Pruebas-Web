@@ -72,6 +72,54 @@ body .three-container .main-menu .menu-burguer img:hover {
   background-size: 200% 200%;
   cursor: pointer;
 }
+body .three-container .main-menu .menu-content.visible {
+  visibility: visible;
+}
+body .three-container .main-menu .menu-content {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  align-items: start;
+  background-color: rgb(242, 148, 65);
+  padding: 10px 20rem 0 10px;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+body .three-container .main-menu .menu-content .close-menu_button {
+  background-color: rgb(224, 91, 91);
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+body .three-container .main-menu .menu-content .close-menu_button img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+body .three-container .main-menu .menu-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+  padding: 0;
+}
+body .three-container .main-menu .menu-content ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+}
+body .three-container .main-menu .switch-changes_color {
+  z-index: 3;
+}
 body .three-container .main-menu .switch-changes_color span {
   /*img {
       padding: 0 10px 0;
@@ -115,7 +163,7 @@ body .three-container .main-title {
   align-self: center;
   width: auto;
   margin: 20px 0;
-  z-index: 2;
+  z-index: 1;
 }
 body .three-container .main-title h1 {
   color: white;

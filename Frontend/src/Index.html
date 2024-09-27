@@ -12,9 +12,21 @@
 
     <header class="three-container" id="three-container">
         <div class="main-menu">
-            <div class="menu-burguer">
+            <div class="menu-burguer" id="menu-burguer">
                 <img src="../src/images/Icons/bars-solid.png" alt="">
             </div>
+
+            <!--nav se muestra cuando se de click en en el menu hamburguesa--> 
+            <nav class="menu-content" id="menu-content">
+                <button class="close-menu_button" id="close-menu_button">
+                    <img src="../src/images/Icons/xmark-solid.png" alt="">
+                </button>
+                <ul>
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">My Works</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
     
             <div class="switch-changes_color">
                 <!--<span><i class="fa-solid fa-sun fa-lg" style="color: #f29441;"></i></span>-->
@@ -46,6 +58,7 @@
     </main>
 
     <script src="js/HomeScript.js"></script>
+    <script src="js/BurgerMenu.js"></script>
     <script type="module" src="js/BackThree.js"></script>
 </body>
 </html>
