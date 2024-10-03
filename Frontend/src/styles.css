@@ -59,11 +59,10 @@ body .three-container .main-menu .menu-burguer img {
   padding: 10px;
   background-color: rgb(32, 46, 128);
   background-image: radial-gradient(circle at center, rgb(41, 58, 99) 50%, transparent 50%);
-  background-repeat: no-repeat;
   transition: background-size 0.1s;
   background-size: 0 0;
   background-position: 50% 50%;
-  border-radius: 16%;
+  border-radius: 5px;
   margin-bottom: 3vh;
   border: 2px solid black;
 }
@@ -80,42 +79,63 @@ body .three-container .main-menu .menu-content {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 1rem;
   position: absolute;
+  padding: 17px;
+  width: 400px;
+  gap: 1rem;
+  z-index: 5;
   top: 0;
   left: 0;
   bottom: 0;
-  align-items: start;
-  background-color: rgb(242, 148, 65);
-  padding: 10px 20rem 0 10px;
+  background-color: rgb(58, 77, 180);
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  border-right: 2px solid black;
 }
 body .three-container .main-menu .menu-content .close-menu_button {
   background-color: rgb(224, 91, 91);
+  background-image: radial-gradient(circle at center, rgb(172, 38, 38) 50%, transparent 50%);
+  transition: background-size 0.1s;
+  background-size: 0 0;
+  background-position: 50% 50%;
   border-radius: 5px;
   border: 2px solid black;
-  cursor: pointer;
 }
 body .three-container .main-menu .menu-content .close-menu_button img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   padding: 10px;
 }
+body .three-container .main-menu .menu-content .close-menu_button:hover {
+  transform: scale(1.03);
+  background-size: 200% 200%;
+  cursor: pointer;
+}
 body .three-container .main-menu .menu-content ul {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  margin: 20px 0;
   list-style-type: none;
-  padding: 0;
+  width: 100%;
+}
+body .three-container .main-menu .menu-content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 body .three-container .main-menu .menu-content ul li a {
-  text-decoration: none;
+  width: 100%;
   color: white;
+  text-decoration: none;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  padding: 10px 0;
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+}
+body .three-container .main-menu .menu-content ul li:hover {
+  background-color: rgba(242, 242, 240, 0.2);
+  cursor: pointer;
 }
 body .three-container .main-menu .switch-changes_color {
   z-index: 3;

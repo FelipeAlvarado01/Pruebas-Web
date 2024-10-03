@@ -18,7 +18,7 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
 }
 
 #three-container canvas {
-    //Para que la escena de three se muestre en la posicion deseada
+    //Para que la escena de three se muestre en la posicion inicial
     width: 100vw !important;
     height: 100vh !important;
     position: absolute;
@@ -73,11 +73,10 @@ body {
                     padding: 10px;
                     background-color: rgb(32, 46, 128);
                     background-image: radial-gradient(circle at center, rgb(41, 58, 99) 50%, transparent 50%);
-                    background-repeat: no-repeat;
                     transition: background-size .1s;
                     background-size: 0 0;
                     background-position: 50% 50%;
-                    border-radius: 16%;
+                    border-radius: 5px;
                     margin-bottom: 3vh;
                     border: 2px solid black;
                 }
@@ -89,63 +88,84 @@ body {
                 }
             }
 
-            
-            .menu-content.visible{
-                //display: flex;
-                //opacity: 1;
+
+            .menu-content.visible {
+                //Se llama en el javascript para que se muestre el menu 
                 visibility: visible;
             }
 
             .menu-content {
-                //opacity: 0;
                 visibility: hidden;
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                gap: 1rem;
                 position: absolute;
+                padding: 17px;
+                width: 400px;
+                gap: 1rem;
+                z-index: 5;
                 top: 0;
                 left: 0;
                 bottom: 0;
-                align-items: start ;
-                background-color: rgb(242, 148, 65);
-                padding: 10px 20rem 0 10px;
+                background-color: rgb(58, 77, 180);
                 box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-                z-index: 5;
+                border-right: 2px solid black;
 
                 .close-menu_button {
-                    //background: none;
+                    //background-color: black;
                     background-color: rgb(224, 91, 91);
+                    background-image: radial-gradient(circle at center, rgb(172, 38, 38) 50%, transparent 50%);
+                    transition: background-size .1s;
+                    background-size: 0 0;
+                    background-position: 50% 50%;
                     border-radius: 5px;
                     border: 2px solid black;
-                    cursor: pointer;
                     
-                    img{
-                        width: 40px;
-                        height: 40px;
+                    img {
+                        width: 45px;
+                        height: 45px;
                         padding: 10px;
+
                     }
+                }
+                .close-menu_button:hover{
+                    transform: scale(1.03);
+                    background-size: 200% 200%;
+                    cursor: pointer;
                 }
 
                 ul {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
+                    margin: 20px 0;
                     list-style-type: none;
-                    padding: 0;
+                    width: 100%;
 
-                    li a {
-                        text-decoration: none;
-                        color: white;
-                        text-align: center;
-                        font-size: 2vw;
-                        font-family: $typographyPoppins;
-                        text-shadow:
-                            -2px -2px 2px black,
-                            2px -2px 2px black,
-                            -2px 2px 2px black,
-                            2px 2px 2px black;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        border-top: 2px solid black;
+                        border-bottom: 2px solid black;
+                        width: 100%;
 
+                        a {
+                            width: 100%;
+                            color: white;
+                            text-decoration: none;
+                            text-align: center;
+                            font-size: 3vw;
+                            font-family: $typographyPoppins;
+                            padding: 10px 0;
+                            text-shadow:
+                                -2px -2px 2px black,
+                                2px -2px 2px black,
+                                -2px 2px 2px black,
+                                2px 2px 2px black;
+
+                        }
+                    }
+                    li:hover {
+                        background-color: rgb(242, 242, 240, 0.2);
+                        cursor: pointer;
                     }
                 }
             }
@@ -154,6 +174,7 @@ body {
 
             .switch-changes_color {
                 z-index: 3;
+
                 span {
                     /*img {
                         padding: 0 10px 0;

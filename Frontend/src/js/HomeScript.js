@@ -9,9 +9,9 @@ rangeInput.addEventListener('input', function () {
   const colorValue = rangeInput.value;
 
   document.querySelector('header').style.backgroundColor = interpolateColor(colorValue,{ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
-  document.querySelector('.slider-change').style.backgroundColor = interpolateColor(colorValue,{r: 245, g: 130, b: 65}, {r: 153, g: 191, b: 242});
-  document.querySelector('.menu-burguer img').style.backgroundColor = interpolateColor(colorValue, {r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
-  document.querySelector('.down-button img').style.backgroundColor = interpolateColor(colorValue, {r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
+  document.querySelector('#slider-change').style.backgroundColor = interpolateColor(colorValue,{r: 245, g: 130, b: 65}, {r: 153, g: 191, b: 242});
+  document.querySelector('#menu-burguer img').style.backgroundColor = interpolateColor(colorValue, {r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
+  document.querySelector('#down-button img').style.backgroundColor = interpolateColor(colorValue, {r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
   //document.querySelector('.down-button i').style.boxShadow = "2px 4px 4px " + interpolateColor(colorValue, {r:0, g: 0, b: 0}, {r: 33, g: 27, b: 24});
   //console.log(interpolateColor(colorValue));
 });
@@ -38,3 +38,6 @@ icon.addEventListener('click', function () {
     icon.style.transform = 'translateY(0)';
   }, 200);
 });
+
+
+
