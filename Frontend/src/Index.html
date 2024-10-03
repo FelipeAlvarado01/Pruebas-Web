@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b2a572fab6.js" crossorigin="anonymous"></script>
-    
+
     <title>Hi!</title>
 </head>
+
 <body>
 
     <header class="three-container" id="three-container">
@@ -16,22 +18,22 @@
                 <img src="../src/images/Icons/bars-solid.png" alt="">
             </div>
 
-            <!--nav se muestra cuando se de click en en el menu hamburguesa--> 
+            <!--nav se muestra cuando se de click en en el menu hamburguesa-->
             <nav class="menu-content" id="menu-content">
                 <button class="close-menu_button" id="close-menu_button">
                     <img src="../src/images/Icons/xmark-solid.png" alt="">
                 </button>
                 <ul>
-                  <li id="About-Me_Button"><a  href="#">About Me</a></li>
-                  <li id="My-Works_Button"><a href="#">My Works</a></li>
-                  <li id="Contact_Button"><a href="#">Contact</a></li>
+                    <li id="About-Me_Button"><a href="#">About Me</a></li>
+                    <li id="My-Works_Button"><a href="#">My Works</a></li>
+                    <li id="Contact_Button"><a href="#">Contact</a></li>
                 </ul>
 
                 <div class="icon-section">
-                    
+
                 </div>
-              </nav>
-    
+            </nav>
+
             <div class="switch-changes_color">
                 <!--<span><i class="fa-solid fa-sun fa-lg" style="color: #f29441;"></i></span>-->
                 <span><img class="sun-img" src="../src/images/Icons/sun-solid.png" alt=""></span>
@@ -48,19 +50,50 @@
 
         <div class="down-button">
             <!--<i class="fa-solid fa-caret-down fa-2x" style="color: #ffffff;"></i>-->
-            <img src="../src/images/Icons/caret-down-solid.png" alt="">            
+            <img src="../src/images/Icons/caret-down-solid.png" alt="">
         </div>
     </header>
 
     <main>
         <section class="My-Description" id="My-Description">
             <img class="My-Photo" src="./images/MyPhoto.jpg" alt="">
-        
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis alias neque deserunt, vel optio fuga aliquid harum magnam ullam perferendis provident impedit quasi excepturi eius natus?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis alias
+                neque deserunt, vel optio fuga aliquid harum magnam ullam perferendis provident impedit quasi excepturi
+                eius natus?</p>
         </section>
 
         <section class="My-Works">
-            
+            <h4>my works</h4>
+            <div class="menu-products_container">
+                <div class="scrolling-button_container">
+                    <!--<button class="scrolling-button" id="scrolling-button_left"><i class="fa-solid fa-arrow-left"
+                            style="color: #ffffff;"></i></button>-->
+                </div>
+                <div class="scrolling-container">
+                    <div class="scrolling-card" data-categoria="Guantes">
+
+                        <h4>Guantes</h4>
+                    </div>
+                    <div class="scrolling-card" data-categoria="Calcomanías">
+
+                        <h4>Calcomanías</h4>
+
+                    </div>
+                    <div class="scrolling-card" data-categoria="Pijamas">
+
+                        <h4>Pijamas</h4>
+
+                    </div>
+                    <div class="scrolling-card" data-categoria="Impermeables">
+
+                        <h4>Impermeables</h4>
+                    </div>
+                    <div class="scrolling-button_container">
+                        <!--<button class="scrolling-button" id="scrolling-button_right"><i class="fa-solid fa-arrow-right"
+                                style="color: #ffffff;"></i></button>-->
+                    </div>
+                </div>
         </section>
 
     </main>
@@ -69,4 +102,5 @@
     <script src="js/BurgerMenu.js"></script>
     <script type="module" src="js/BackThree.js"></script>
 </body>
+
 </html>
