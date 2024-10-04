@@ -24,9 +24,9 @@
                     <img src="../src/images/Icons/xmark-solid.png" alt="">
                 </button>
                 <ul>
-                    <li id="About-Me_Button"><a href="#">About Me</a></li>
-                    <li id="My-Works_Button"><a href="#">My Works</a></li>
-                    <li id="Contact_Button"><a href="#">Contact</a></li>
+                    <li id="about-me_button"><a href="#">About Me</a></li>
+                    <li id="my-works_button"><a href="#">My Works</a></li>
+                    <li id="contact_button"><a href="#">Contact</a></li>
                 </ul>
 
                 <div class="icon-section">
@@ -48,52 +48,50 @@
             <h1>Felipe Alvarado.</h1>
         </div>
 
-        <div class="down-button">
+        <div class="down-button" id="down-button">
             <!--<i class="fa-solid fa-caret-down fa-2x" style="color: #ffffff;"></i>-->
             <img src="../src/images/Icons/caret-down-solid.png" alt="">
         </div>
     </header>
 
     <main>
-        <section class="My-Description" id="My-Description">
-            <img class="My-Photo" src="./images/MyPhoto.jpg" alt="">
+        <section class="my-description" id="my-description">
+            <p class="main-titles">About Me</p>
+            <div class="description-container">
+                <img class="my-photo" src="./images/MyPhoto.jpg" alt="">
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis alias
-                neque deserunt, vel optio fuga aliquid harum magnam ullam perferendis provident impedit quasi excepturi
-                eius natus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis
+                    alias
+                    neque deserunt, vel optio fuga ali|quid harum magnam ullam perferendis provident impedit quasi
+                    excepturi
+                    eius natus?</p>
+            </div>
         </section>
 
-        <section class="My-Works">
-            <h4>my works</h4>
-            <div class="menu-products_container">
+        <section class="my-works" id="my-works">
+            <p class="main-titles">My Works</p>
+
+            <div class="works-slider">
                 <div class="scrolling-button_container">
-                    <!--<button class="scrolling-button" id="scrolling-button_left"><i class="fa-solid fa-arrow-left"
-                            style="color: #ffffff;"></i></button>-->
+                    <img src="../src/images/Icons/circle-arrow-left-solid.png" alt="">
                 </div>
+
                 <div class="scrolling-container">
-                    <div class="scrolling-card" data-categoria="Guantes">
-
-                        <h4>Guantes</h4>
-                    </div>
-                    <div class="scrolling-card" data-categoria="Calcomanías">
-
-                        <h4>Calcomanías</h4>
-
-                    </div>
-                    <div class="scrolling-card" data-categoria="Pijamas">
-
-                        <h4>Pijamas</h4>
-
-                    </div>
-                    <div class="scrolling-card" data-categoria="Impermeables">
-
-                        <h4>Impermeables</h4>
-                    </div>
-                    <div class="scrolling-button_container">
-                        <!--<button class="scrolling-button" id="scrolling-button_right"><i class="fa-solid fa-arrow-right"
-                                style="color: #ffffff;"></i></button>-->
+                    <div class="scrolling-card">
+                        <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
+                        <h4>work 1</h4>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="scrolling-button_container">
+                    <img src="../src/images/Icons/circle-arrow-right-solid.png" alt="">
+                </div>
+            </div>
         </section>
 
     </main>

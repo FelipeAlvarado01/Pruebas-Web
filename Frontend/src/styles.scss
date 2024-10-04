@@ -17,15 +17,6 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
     box-sizing: border-box;
 }
 
-#three-container canvas {
-    //Para que la escena de three se muestre en la posicion inicial
-    width: 100vw !important;
-    height: 100vh !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -120,7 +111,7 @@ body {
                     background-position: 50% 50%;
                     border-radius: 5px;
                     border: 2px solid black;
-                    
+
                     img {
                         width: 45px;
                         height: 45px;
@@ -128,7 +119,8 @@ body {
 
                     }
                 }
-                .close-menu_button:hover{
+
+                .close-menu_button:hover {
                     transform: scale(1.03);
                     background-size: 200% 200%;
                     cursor: pointer;
@@ -163,6 +155,7 @@ body {
 
                         }
                     }
+
                     li:hover {
                         background-color: rgb(242, 242, 240, 0.2);
                         cursor: pointer;
@@ -286,34 +279,154 @@ body {
     }
 
     main {
-        .My-Description {
+        .my-description {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: center;
-            align-items: center;
-            position: absolute;
+            flex-direction: column;
             height: 100vh;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 2px solid black;
+            padding: 5%;
 
-            .My-Photo {
-                //padding: 1vh;
-                max-width: 50%;
-                height: 50%;
-                margin: 5%;
-                border-radius: 50%;
-                border: 3px solid black;
-                box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
-                //filter: drop-shadow(1px 1px 0px black) drop-shadow(-1px -1px 0px black);
-            }
-
-            p {
-                padding: 2vh;
-                max-width: 50%;
+            .main-titles {
+                color: white;
+                text-decoration: none;
+                font-size: 35px;
                 font-family: $typographyPoppins;
-                font-size: 2vw;
-                margin: 5%;
+                padding: 10px 0;
+                text-shadow:
+                    -2px -2px 2px black,
+                    2px -2px 2px black,
+                    -2px 2px 2px black,
+                    2px 2px 2px black;
             }
+
+            .description-container {
+                display: flex;
+                flex-direction: row;
+                //flex-wrap:wrap-reverse;
+                align-items: center;
+                //justify-content: center;
+
+
+                img {
+                    width: 50%;
+                    border-radius: 50%;
+                    //padding: 10px 0px 0 0;
+                    border: 2px solid black;
+                }
+
+                p {
+                    width: 50%;
+                    font-family: $typographyPoppins;
+                    font-size: 30px;
+                    padding: 50px;
+                }
+            }
+
+            /*.description-container {
+                display: flex;    
+                flex-direction: row;
+                flex-wrap: wrap;
+                position: absolute;
+                //width: 100vh;
+                
+                .my-photo {
+                    max-width: 50%;
+                    height: 50%;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                    box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
+                }
+
+                p {
+                    //padding: 2vh 5vh;
+                    max-width: 50%;
+                    font-family: $typographyPoppins;
+                    font-size: 0.1vw;
+                }
+            }*/
+        }
+
+        .my-works {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(58, 77, 180);
+            border-bottom: 2px solid black;
+            padding: 5%;
+
+            .main-titles {
+                //width: 100%;
+                color: white;
+                text-decoration: none;
+                font-size: 35px;
+                font-family: $typographyPoppins;
+                padding: 10px 0;
+                text-shadow:
+                    -2px -2px 2px black,
+                    2px -2px 2px black,
+                    -2px 2px 2px black,
+                    2px 2px 2px black;
+            }
+
+            .works-slider {
+                display: flex;
+                flex-direction: row;
+                //justify-content: center;
+                align-content: center;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .scrolling-button_container {
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+
+                    img:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .scrolling-container {
+                    .scrolling-card {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid black;
+                        border-radius: 10px;
+                        padding: 20px 30px;
+                        background-color: rgb(74, 99, 240);
+                        cursor: pointer;
+                        
+                        img{
+                            border-radius: 10px;
+                            border: 2px solid black;
+                        }
+                        h4 {
+                            width: 100%;
+                            color: white;
+                            font-family: $typographyPoppins;
+                            font-size: 25px;
+                            border-bottom: 2px solid black;
+                        }
+                        ul li{
+
+                            list-style-type: none;
+                            font-family: $typographyPoppins;
+                            font-size: 15px;
+                        }
+                    }
+                    .scrolling-card:hover{
+                        background-color: rgb(66, 77, 138);
+                    }
+                }
+
+            }
+
         }
     }
 }

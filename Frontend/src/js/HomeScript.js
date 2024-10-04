@@ -31,7 +31,7 @@ icon.addEventListener('click', function () {
   icon.style.transition = 'transform 0.1s ease';// Agrega una clase para deslizar hacia abajo
   icon.style.transform = 'translateY(10px)';
 
-  const descriptionSection = document.getElementById('My-Description');
+  const descriptionSection = document.getElementById('my-description');
   descriptionSection.scrollIntoView({ behavior: 'smooth' });// Desplaza a la sección
 
   setTimeout(function () {
