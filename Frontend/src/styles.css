@@ -233,17 +233,21 @@ body main .my-description .main-titles {
 body main .my-description .description-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 body main .my-description .description-container img {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 2px solid black;
 }
 body main .my-description .description-container p {
   width: 50%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   padding: 50px;
 }
 body main .my-works {
@@ -265,16 +269,27 @@ body main .my-works .main-titles {
 body main .my-works .works-slider {
   display: flex;
   flex-direction: row;
+  position: static;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+  height: 100vh;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;
   height: 75px;
+  margin: 0 20px;
 }
 body main .my-works .works-slider .scrolling-button_container img:hover {
   cursor: pointer;
+}
+body main .my-works .works-slider .scrolling-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
@@ -284,9 +299,11 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   border-radius: 10px;
   padding: 20px 30px;
   background-color: rgb(74, 99, 240);
+  height: 600px;
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card img {
+  width: 300px;
   margin: 0 0 10px 0;
   border-radius: 10px;
   border: 2px solid black;
@@ -310,4 +327,7 @@ body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card:hover {
   background-color: rgb(66, 77, 138);
+}
+body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
