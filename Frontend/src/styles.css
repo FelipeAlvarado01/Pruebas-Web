@@ -32,7 +32,6 @@ body .three-container {
   max-width: 100%;
   height: 100vh;
   position: relative;
-  z-index: 1;
   background-color: rgb(33, 50, 146);
   border-bottom: 2px solid black;
   filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
@@ -43,6 +42,8 @@ body .three-container .main-menu {
   align-content: center;
   justify-content: space-between;
   margin: 2vh;
+}
+body .three-container .main-menu .menu-burguer {
   z-index: 2;
 }
 body .three-container .main-menu .menu-burguer img {
@@ -175,7 +176,7 @@ body .three-container .main-title {
   align-self: center;
   width: auto;
   margin: 20px 0;
-  z-index: 1;
+  z-index: 2;
 }
 body .three-container .main-title h1 {
   color: white;
@@ -219,29 +220,7 @@ body main .my-description {
   height: 100vh;
   background-color: rgb(255, 255, 255);
   border-bottom: 2px solid black;
-  padding: 5%;
-  /*.description-container {
-      display: flex;    
-      flex-direction: row;
-      flex-wrap: wrap;
-      position: absolute;
-      //width: 100vh;
-
-      .my-photo {
-          max-width: 50%;
-          height: 50%;
-          border-radius: 50%;
-          border: 2px solid black;
-          box-shadow: 1px 1px 0px 0px black, -1px -1px 0px 0px black;
-      }
-
-      p {
-          //padding: 2vh 5vh;
-          max-width: 50%;
-          font-family: $typographyPoppins;
-          font-size: 0.1vw;
-      }
-  }*/
+  padding: 2%;
 }
 body main .my-description .main-titles {
   color: white;
@@ -257,7 +236,7 @@ body main .my-description .description-container {
   align-items: center;
 }
 body main .my-description .description-container img {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -270,11 +249,10 @@ body main .my-description .description-container p {
 body main .my-works {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100vh;
   background-color: rgb(58, 77, 180);
   border-bottom: 2px solid black;
-  padding: 5%;
+  padding: 2%;
 }
 body main .my-works .main-titles {
   color: white;
@@ -302,7 +280,6 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px 30px;
@@ -310,15 +287,21 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card img {
+  margin: 0 0 10px 0;
   border-radius: 10px;
   border: 2px solid black;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card h4 {
-  width: 100%;
   color: white;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 25px;
-  border-bottom: 2px solid black;
+}
+body main .my-works .works-slider .scrolling-container .scrolling-card hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 5px 0;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
   list-style-type: none;

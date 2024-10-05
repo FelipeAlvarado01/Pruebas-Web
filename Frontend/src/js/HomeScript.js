@@ -33,6 +33,7 @@ icon.addEventListener('click', function () {
 
   const descriptionSection = document.getElementById('my-description');
   descriptionSection.scrollIntoView({ behavior: 'smooth' });// Desplaza a la sección
+  document.getElementById('menu-content').classList.remove('visible');//cierra el menu hamburguesa si es necesario
 
   setTimeout(function () {
     icon.style.transform = 'translateY(0)';
