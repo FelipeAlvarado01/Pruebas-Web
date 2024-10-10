@@ -240,7 +240,7 @@ body main .my-description .description-container {
   width: 100%;
 }
 body main .my-description .description-container img {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -254,7 +254,7 @@ body main .my-works {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: rgb(58, 77, 180);
+  background-color: rgb(33, 50, 146);
   border-bottom: 2px solid black;
   padding: 2%;
 }
@@ -269,11 +269,14 @@ body main .my-works .main-titles {
 body main .my-works .works-slider {
   display: flex;
   flex-direction: row;
-  position: static;
-  align-content: center;
+  position: relative;
   align-items: center;
-  justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+body main .my-works .works-slider .scrolling-button_container {
+  z-index: 2;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;
@@ -290,16 +293,20 @@ body main .my-works .works-slider .scrolling-container {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 20px;
+  transition: transform 0.5s ease;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px 30px;
   background-color: rgb(74, 99, 240);
-  height: 600px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.5;
+  transform: scale(0.9);
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card img {
@@ -323,10 +330,14 @@ body main .my-works .works-slider .scrolling-container .scrolling-card hr {
 body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
   list-style-type: none;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card:hover {
   background-color: rgb(66, 77, 138);
+}
+body main .my-works .works-slider .scrolling-container .scrolling-card.active {
+  transform: scale(1);
+  opacity: 1;
 }
 body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
   display: none;

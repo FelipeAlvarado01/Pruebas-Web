@@ -305,14 +305,14 @@ body {
             .description-container {
                 display: flex;
                 flex-direction: row;
-                flex-wrap:nowrap;
+                flex-wrap: nowrap;
                 align-items: center;
                 justify-content: center;
                 height: 100vh;
                 width: 100%;
 
                 img {
-                    width: 50%;
+                    width: 40%;
                     border-radius: 50%;
                     //padding: 10px 0px 0 0;
                     border: 2px solid black;
@@ -331,7 +331,7 @@ body {
             display: flex;
             flex-direction: column;
             height: 100vh;
-            background-color: rgb(58, 77, 180);
+            background-color: rgb(33, 50, 146);
             border-bottom: 2px solid black;
             padding: 2%;
 
@@ -352,13 +352,16 @@ body {
             .works-slider {
                 display: flex;
                 flex-direction: row;
-                position:static;
-                align-content: center;
+                position: relative;
                 align-items: center;
-                justify-content: space-between;
+                //justify-content: space-between;
                 height: 100vh;
+                overflow: hidden;
+                width: 100%;
 
                 .scrolling-button_container {
+                    z-index: 2;
+
                     img {
                         width: 75px;
                         height: 75px;
@@ -377,16 +380,20 @@ body {
                     overflow-x: auto; // si sobre pasa el ancho del contenedor
                     scroll-behavior: smooth; // se vea mucho mas fluido el movimiento
                     gap: 20px;
+                    transition: transform 0.5s ease;
 
                     .scrolling-card {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        justify-content: center;
                         border: 2px solid black;
                         border-radius: 10px;
                         padding: 20px 30px;
                         background-color: rgb(74, 99, 240);
-                        height: 600px;
+                        transition: transform 0.5s ease, opacity 0.5s ease;
+                        opacity: 0.5;
+                        transform: scale(0.9);
                         cursor: pointer;
 
                         img {
@@ -415,17 +422,23 @@ body {
                         ul li {
                             list-style-type: none;
                             font-family: $typographyPoppins;
-                            font-size: 15px;
+                            font-size: 20px;
                         }
                     }
 
                     .scrolling-card:hover {
                         background-color: rgb(66, 77, 138);
                     }
+
+                    .scrolling-card.active {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
                 }
+
                 .scrolling-container::-webkit-scrollbar {
                     display: none;
-                  }
+                }
             }
         }
     }
