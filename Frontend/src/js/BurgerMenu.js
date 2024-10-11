@@ -9,7 +9,6 @@ closeMenuButton.addEventListener('click', function() {
     document.getElementById('menu-content').classList.remove('visible'); //Quita el menu hamburguesa
 });
 
-
 /*--------------------MUEVE HACIA ABAJO CUANDO CLICKEA UNA SECCION--------------------*/
 const aboutMe = document.querySelector('#about-me_button a');
 

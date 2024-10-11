@@ -256,27 +256,25 @@ body main .my-works {
   height: 100vh;
   background-color: rgb(33, 50, 146);
   border-bottom: 2px solid black;
-  padding: 2%;
 }
 body main .my-works .main-titles {
   color: white;
   text-decoration: none;
   font-size: 35px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  padding: 10px 0;
+  padding: 10px 2%;
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
 }
 body main .my-works .works-slider {
   display: flex;
   flex-direction: row;
-  position: relative;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
-  overflow: hidden;
-  width: 100%;
+  overflow: visible;
 }
 body main .my-works .works-slider .scrolling-button_container {
-  z-index: 2;
+  z-index: 3;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;

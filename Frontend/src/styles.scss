@@ -314,7 +314,6 @@ body {
                 img {
                     width: 40%;
                     border-radius: 50%;
-                    //padding: 10px 0px 0 0;
                     border: 2px solid black;
                 }
 
@@ -333,15 +332,13 @@ body {
             height: 100vh;
             background-color: rgb(33, 50, 146);
             border-bottom: 2px solid black;
-            padding: 2%;
 
             .main-titles {
-                //width: 100%;
                 color: white;
                 text-decoration: none;
                 font-size: 35px;
                 font-family: $typographyPoppins;
-                padding: 10px 0;
+                padding: 10px 2%;
                 text-shadow:
                     -2px -2px 2px black,
                     2px -2px 2px black,
@@ -352,15 +349,15 @@ body {
             .works-slider {
                 display: flex;
                 flex-direction: row;
-                position: relative;
                 align-items: center;
-                //justify-content: space-between;
+                justify-content: space-between;
                 height: 100vh;
-                overflow: hidden;
-                width: 100%;
+                overflow: visible;
+                
+                
 
                 .scrolling-button_container {
-                    z-index: 2;
+                    z-index: 3;
 
                     img {
                         width: 75px;
@@ -381,6 +378,7 @@ body {
                     scroll-behavior: smooth; // se vea mucho mas fluido el movimiento
                     gap: 20px;
                     transition: transform 0.5s ease;
+                    //position: absolute;
 
                     .scrolling-card {
                         display: flex;
