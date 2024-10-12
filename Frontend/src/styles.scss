@@ -25,15 +25,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    //overflow-x: hidden;
-    //margin: 2vw;
 
     .three-container canvas {
         max-width: 100% !important;
         height: 100vh !important;
         position: absolute;
-        //top: 0;
-        //left: 0;
         z-index: 1;
     }
 
@@ -329,6 +325,7 @@ body {
         .my-works {
             display: flex;
             flex-direction: column;
+            //justify-content: stretch;
             height: 100vh;
             background-color: rgb(33, 50, 146);
             border-bottom: 2px solid black;
@@ -348,16 +345,14 @@ body {
 
             .works-slider {
                 display: flex;
-                flex-direction: row;
+                flex-direction: rowI;
+                ;
                 align-items: center;
-                justify-content: space-between;
-                height: 100vh;
-                overflow: visible;
-                
-                
+                margin: 50px 0px;
 
                 .scrolling-button_container {
-                    z-index: 3;
+                    display: flex;
+                    justify-content: space-between;
 
                     img {
                         width: 75px;
@@ -372,19 +367,14 @@ body {
 
                 .scrolling-container {
                     display: flex;
-                    flex-direction: row;
                     flex-wrap: nowrap;
-                    overflow-x: auto; // si sobre pasa el ancho del contenedor
-                    scroll-behavior: smooth; // se vea mucho mas fluido el movimiento
+                    overflow-x: auto;
+                    scroll-behavior: smooth;
                     gap: 20px;
                     transition: transform 0.5s ease;
-                    //position: absolute;
 
                     .scrolling-card {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+                        flex: 0 0 auto;
                         border: 2px solid black;
                         border-radius: 10px;
                         padding: 20px 30px;
@@ -436,6 +426,129 @@ body {
 
                 .scrolling-container::-webkit-scrollbar {
                     display: none;
+                }
+            }
+
+            .content-slider {
+                display: flex;
+                justify-content: center;
+
+                .dot {
+                    
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 5px;
+                    background-color: rgb(187, 187, 187);
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                    border: 2px solid black;
+                    cursor: pointer;
+                }
+
+                .dot:hover{
+                    background-color: rgb(243, 167, 104);
+                }
+
+                .dot.active{
+                    background-color: rgb(134, 131, 131);
+                    transform: scale(1.5);
+                }
+                .dot.active:hover{
+                    background-color: aqua;
+                }
+            }
+
+        }
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //align-items: center;
+        height: 100vh;
+        padding: 0 2%;
+        gap: 20px;
+
+        .main-titles {
+            color: white;
+            text-decoration: none;
+            font-size: 35px;
+            font-family: $typographyPoppins;
+            padding: 10px 0;
+            text-shadow:
+                -2px -2px 2px black,
+                2px -2px 2px black,
+                -2px 2px 2px black,
+                2px 2px 2px black;
+        }
+
+        .request-text {
+            font-family: $typographyPoppins;
+            font-size: 30px;
+        }
+
+        .form-section {
+            background-color: rgb(33, 50, 146);
+            padding: 20px;
+            border-radius: 10px;
+            width: 600px;
+            height: 60vh;
+            border: 2px solid black;
+
+            .form-request {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+
+                label {
+                    margin: 0 10px;
+                    font-family: $typographyPoppins;
+                    font-size: 25px;
+                    color: #000000
+                }
+
+                input[type=email],
+                input[type=text],
+                textarea {
+                    font-family: $typographyPoppins;
+                    font-size: 20px;
+                    background: none;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 15px 0 10px 10px;
+                    width: 100%;
+                    outline: none;
+                    border-bottom: 2px solid rgb(0, 0, 0);
+                    color: rgb(255, 255, 255);
+                    flex-wrap: wrap;
+                    resize: none;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+
+                    input[type=submit] {
+                        width: 20%;
+                        font-family: $typographyPoppins;
+                        font-size: 22px;
+                        border-radius: 5px;
+                        border: none;
+                        margin: 15px 0;
+                        padding: 10px 20px;
+                        flex-wrap: wrap;
+                        border: 2px solid black;
+                    }
+
+                    input[type=submit]:hover {
+
+                        background-color: rgb(0, 0, 0);
+                        color: rgb(255, 255, 255);
+                        cursor: pointer;
+                    }
                 }
             }
         }

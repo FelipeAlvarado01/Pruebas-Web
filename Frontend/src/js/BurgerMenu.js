@@ -26,5 +26,12 @@ myWorks.addEventListener('click', function () {
   document.getElementById('menu-content').classList.remove('visible');
 });
 
+const contactMe = document.querySelector('#contact_button a');
+
+contactMe.addEventListener('click', () => {
+  const contactMeSection = document.getElementById('contact-me');
+  contactMeSection.scrollIntoView({behavior: 'smooth'});
+  document.getElementById('menu-content').classList.remove('visible');
+});
 
 

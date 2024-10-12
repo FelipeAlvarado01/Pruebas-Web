@@ -267,14 +267,13 @@ body main .my-works .main-titles {
 }
 body main .my-works .works-slider {
   display: flex;
-  flex-direction: row;
+  flex-direction: rowI;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  overflow: visible;
+  margin: 50px 0px;
 }
 body main .my-works .works-slider .scrolling-button_container {
-  z-index: 3;
+  display: flex;
+  justify-content: space-between;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;
@@ -286,7 +285,6 @@ body main .my-works .works-slider .scrolling-button_container img:hover {
 }
 body main .my-works .works-slider .scrolling-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -294,10 +292,7 @@ body main .my-works .works-slider .scrolling-container {
   transition: transform 0.5s ease;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 auto;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px 30px;
@@ -339,4 +334,105 @@ body main .my-works .works-slider .scrolling-container .scrolling-card.active {
 }
 body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
   display: none;
+}
+body main .my-works .content-slider {
+  display: flex;
+  justify-content: center;
+}
+body main .my-works .content-slider .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 2px solid black;
+  cursor: pointer;
+}
+body main .my-works .content-slider .dot:hover {
+  background-color: rgb(243, 167, 104);
+}
+body main .my-works .content-slider .dot.active {
+  background-color: rgb(134, 131, 131);
+  transform: scale(1.5);
+}
+body main .my-works .content-slider .dot.active:hover {
+  background-color: aqua;
+}
+body .contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 0 2%;
+  gap: 20px;
+}
+body .contact-me .main-titles {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  padding: 10px 0;
+  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+}
+body .contact-me .request-text {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+body .contact-me .form-section {
+  background-color: rgb(33, 50, 146);
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  height: 60vh;
+  border: 2px solid black;
+}
+body .contact-me .form-section .form-request {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+body .contact-me .form-section .form-request label {
+  margin: 0 10px;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 25px;
+  color: #000000;
+}
+body .contact-me .form-section .form-request input[type=email],
+body .contact-me .form-section .form-request input[type=text],
+body .contact-me .form-section .form-request textarea {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  background: none;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 0 10px 10px;
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  resize: none;
+}
+body .contact-me .form-section .form-request div {
+  display: flex;
+  justify-content: center;
+}
+body .contact-me .form-section .form-request div input[type=submit] {
+  width: 20%;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+body .contact-me .form-section .form-request div input[type=submit]:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

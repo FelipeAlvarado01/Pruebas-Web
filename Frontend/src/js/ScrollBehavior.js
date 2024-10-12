@@ -5,10 +5,10 @@ const scrollingContainer = document.querySelector("#scrolling-container");
 let cardSelected = 3;//La primera carta en mostrarse
 
 centerCard();
-leftButton.addEventListener('click', function () {
+leftButton.addEventListener('click',  () => {
     moveTo(cardSelected - 1);
 });
-rightButton.addEventListener('click', function () {
+rightButton.addEventListener('click',  () => {
     moveTo(cardSelected + 1);
 });
 
@@ -38,8 +38,8 @@ function centerCard(){
 
     scrollingContainer.scrollLeft = cardCenter - containerCenter;
 
-    console.log("centro container: " + scrollingContainer.offsetWidth);
+    /*console.log("centro container: " + scrollingContainer.offsetWidth);
     console.log("centro de la carta: "+ cardCenter);
-    console.log("posicion: "+ (cardCenter - containerCenter));
+    console.log("posicion: "+ (cardCenter - containerCenter));*/
 }
 /*===============================================================================================*/
