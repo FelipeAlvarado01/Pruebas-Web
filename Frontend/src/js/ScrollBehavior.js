@@ -5,6 +5,7 @@ const rightButton = document.querySelector("#scrolling-button_right");
 const scrollingContainer = document.querySelector("#scrolling-container");
 let cardSelected = 3;//La primera carta en mostrarse
 
+console.log(window.innerWidth);
 centerCard();
 
 leftButton.addEventListener('click',  () => {

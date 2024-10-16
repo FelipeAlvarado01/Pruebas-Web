@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Globales*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
@@ -13,16 +14,17 @@
 
 html {
   scroll-behavior: smooth;
+  width: auto;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 }
 body .three-container canvas {
-  max-width: 100% !important;
-  height: 100vh !important;
+  max-width: 100%;
+  height: 100vh;
   position: absolute;
   z-index: 1;
 }
@@ -41,7 +43,7 @@ body .three-container .main-menu {
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  margin: 2vh;
+  margin: 2vw;
 }
 body .three-container .main-menu .menu-burguer {
   z-index: 2;
@@ -56,7 +58,6 @@ body .three-container .main-menu .menu-burguer img {
   background-size: 0 0;
   background-position: 50% 50%;
   border-radius: 5px;
-  margin-bottom: 3vh;
   border: 2px solid black;
 }
 body .three-container .main-menu .menu-burguer img:hover {
@@ -74,7 +75,7 @@ body .three-container .main-menu .menu-content {
   align-items: start;
   position: absolute;
   padding: 17px;
-  width: 400px;
+  width: 50vw;
   gap: 1rem;
   z-index: 5;
   top: 0;
@@ -132,11 +133,6 @@ body .three-container .main-menu .menu-content ul li:hover {
 }
 body .three-container .main-menu .switch-changes_color {
   z-index: 3;
-}
-body .three-container .main-menu .switch-changes_color span {
-  /*img {
-      padding: 0 10px 0;
-  }*/
 }
 body .three-container .main-menu .switch-changes_color span .sun-img {
   width: 25px;
@@ -233,22 +229,22 @@ body main .my-description .main-titles {
 body main .my-description .description-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
 }
 body main .my-description .description-container img {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 2px solid black;
 }
 body main .my-description .description-container p {
   width: 50%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 20px;
-  padding: 50px;
+  font-size: 1rem;
+  padding: 1rem;
 }
 body main .my-works {
   display: flex;
@@ -267,7 +263,7 @@ body main .my-works .main-titles {
 }
 body main .my-works .works-slider {
   display: flex;
-  flex-direction: rowI;
+  flex-direction: row;
   align-items: center;
   margin: 50px 0px;
 }
@@ -290,9 +286,13 @@ body main .my-works .works-slider .scrolling-container {
   scroll-behavior: smooth;
   gap: 20px;
   transition: transform 0.5s ease;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card {
-  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px 30px;
@@ -360,15 +360,14 @@ body main .my-works .content-slider .dot.active {
 body main .my-works .content-slider .dot.active:hover {
   background-color: aqua;
 }
-body .contact-me {
+body main .contact-me {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 100vh;
   padding: 0 2%;
   gap: 20px;
 }
-body .contact-me .main-titles {
+body main .contact-me .main-titles {
   color: white;
   text-decoration: none;
   font-size: 35px;
@@ -376,11 +375,14 @@ body .contact-me .main-titles {
   padding: 10px 0;
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
 }
-body .contact-me .request-text {
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
+body main .contact-me .form-content {
+  padding-top: 50px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
 }
-body .contact-me .form-section {
+body main .contact-me .form-content .form-section {
   background-color: rgb(33, 50, 146);
   padding: 20px;
   border-radius: 10px;
@@ -388,21 +390,21 @@ body .contact-me .form-section {
   height: 60vh;
   border: 2px solid black;
 }
-body .contact-me .form-section .form-request {
+body main .contact-me .form-content .form-section .form-request {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
-body .contact-me .form-section .form-request label {
+body main .contact-me .form-content .form-section .form-request label {
   margin: 0 10px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 25px;
   color: #000000;
 }
-body .contact-me .form-section .form-request input[type=email],
-body .contact-me .form-section .form-request input[type=text],
-body .contact-me .form-section .form-request textarea {
+body main .contact-me .form-content .form-section .form-request input[type=email],
+body main .contact-me .form-content .form-section .form-request input[type=text],
+body main .contact-me .form-content .form-section .form-request textarea {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   background: none;
@@ -416,11 +418,11 @@ body .contact-me .form-section .form-request textarea {
   flex-wrap: wrap;
   resize: none;
 }
-body .contact-me .form-section .form-request div {
+body main .contact-me .form-content .form-section .form-request div {
   display: flex;
   justify-content: center;
 }
-body .contact-me .form-section .form-request div input[type=submit] {
+body main .contact-me .form-content .form-section .form-request div input[type=submit] {
   width: 20%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 22px;
@@ -431,8 +433,20 @@ body .contact-me .form-section .form-request div input[type=submit] {
   flex-wrap: wrap;
   border: 2px solid black;
 }
-body .contact-me .form-section .form-request div input[type=submit]:hover {
+body main .contact-me .form-content .form-section .form-request div input[type=submit]:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+body main .contact-me .form-content .request-text {
+  margin-top: 70px;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+}
+
+/* Pantallas de hasta 480px (dispositivos muy pequeños) */
+@media screen and (max-width: 480px) {
+  html {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
