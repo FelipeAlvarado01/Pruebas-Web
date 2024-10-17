@@ -40,5 +40,3 @@ icon.addEventListener('click', function () {
   }, 200);
 });
 
-
-

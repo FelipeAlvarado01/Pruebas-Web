@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Globales*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
@@ -8,23 +7,20 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 100%;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  width: auto;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 body .three-container canvas {
-  max-width: 100%;
-  height: 100vh;
+  max-width: 100% !important;
+  height: 100vh !important;
   position: absolute;
   z-index: 1;
 }
@@ -109,12 +105,12 @@ body .three-container .main-menu .menu-content ul {
   list-style-type: none;
   width: 100%;
 }
+body .three-container .main-menu .menu-content ul hr {
+  border: 1px solid black;
+}
 body .three-container .main-menu .menu-content ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
   width: 100%;
 }
 body .three-container .main-menu .menu-content ul li a {
@@ -229,14 +225,14 @@ body main .my-description .main-titles {
 body main .my-description .description-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
 }
 body main .my-description .description-container img {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -249,9 +245,11 @@ body main .my-description .description-container p {
 body main .my-works {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
   background-color: rgb(33, 50, 146);
   border-bottom: 2px solid black;
+  gap: 6vh;
 }
 body main .my-works .main-titles {
   color: white;
@@ -265,11 +263,8 @@ body main .my-works .works-slider {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px 0px;
-}
-body main .my-works .works-slider .scrolling-button_container {
-  display: flex;
-  justify-content: space-between;
+  justify-items: center;
+  gap: 5vh;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;
@@ -338,6 +333,7 @@ body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
 body main .my-works .content-slider {
   display: flex;
   justify-content: center;
+  margin: 2%;
 }
 body main .my-works .content-slider .dot {
   height: 15px;
@@ -444,9 +440,47 @@ body main .contact-me .form-content .request-text {
   font-size: 50px;
 }
 
-/* Pantallas de hasta 480px (dispositivos muy pequeños) */
-@media screen and (max-width: 480px) {
-  html {
-    max-width: 100%;
+@media (max-width: 650px) {
+  body {
+    width: 100%;
+  }
+  body main .my-description .main-titles {
+    padding: 2% 0 0 2%;
+  }
+  body main .my-description .description-container {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 5% 0;
+    width: 100%;
+    height: 100%;
+  }
+  body main .my-description .description-container img {
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  body main .my-description .description-container p {
+    width: 100%;
+    font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  body main .my-works {
+    gap: 0px;
+  }
+  body main .my-works .main-titles {
+    padding: 2% 0 0 2%;
+  }
+  body main .my-works .works-slider {
+    gap: 0;
+    width: 100vw;
+  }
+  body main .my-works .works-slider .scrolling-button_container {
+    width: 5%;
+    height: 5%;
+  }
+  body main .my-works .works-slider .scrolling-button_container.visible {
+    visibility: collapse;
   }
 }/*# sourceMappingURL=styles.css.map */

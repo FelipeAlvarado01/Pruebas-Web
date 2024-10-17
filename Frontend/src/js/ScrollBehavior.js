@@ -5,7 +5,6 @@ const rightButton = document.querySelector("#scrolling-button_right");
 const scrollingContainer = document.querySelector("#scrolling-container");
 let cardSelected = 3;//La primera carta en mostrarse
 
-console.log(window.innerWidth);
 centerCard();
 
 leftButton.addEventListener('click',  () => {
@@ -59,3 +58,17 @@ scrollingCards.forEach(card => {
         console.log(card.dataset.index);
     });
 });
+
+/*-----------------------------RESPONSIVE------------------------------------*/
+const screenSize = screen.width;
+console.log(screenSize);
+
+if(screenSize <= 650){
+  console.log("estoy eliminando las flechas");
+  const scrollingButtonContainer = document.querySelectorAll("#scrolling-button_container");
+
+  scrollingButtonContainer.forEach((button)=>{
+    button.classList.add("visible");
+  });
+
+}

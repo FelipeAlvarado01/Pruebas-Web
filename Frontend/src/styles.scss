@@ -13,23 +13,23 @@ $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    //font-size: 100%;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    width: auto;
 }
+
 
 body {
     display: flex;
     flex-direction: column;
-    width: auto;
+    //width: auto;
 
     .three-container canvas {
-        max-width: 100%;
-        height: 100vh ;
+        max-width: 100%  !important; 
+        height: 100vh  !important;
         position: absolute;
         z-index: 1;
     }
@@ -40,8 +40,6 @@ body {
         max-width: 100%;
         height: 100vh;
         position: relative;
-        //overflow: hidden;
-        //z-index: 1; //Maneja la posicion del canvas
         background-color: rgb(33, 50, 146);
         border-bottom: 2px solid black;
         filter: drop-shadow(0.3px 0.3px 1px black) drop-shadow(-0.3px -0.3px 1px black);
@@ -66,7 +64,6 @@ body {
                     background-size: 0 0;
                     background-position: 50% 50%;
                     border-radius: 5px;
-                    //margin-bottom: 3vh;
                     border: 2px solid black;
                 }
 
@@ -128,12 +125,16 @@ body {
                     list-style-type: none;
                     width: 100%;
 
+                    hr {
+                        border: 1px solid black;
+                    }
+
                     li {
                         display: flex;
                         align-items: center;
-                        margin-bottom: 10px;
-                        border-top: 2px solid black;
-                        border-bottom: 2px solid black;
+                        //margin-bottom: 10px;
+                        //border-top: 2px solid black;
+                        //border-bottom: 2px solid black;
                         width: 100%;
 
                         a {
@@ -289,14 +290,14 @@ body {
             .description-container {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
+                flex-wrap:nowrap;
                 align-items: center;
                 justify-content: center;
                 height: 100vh;
                 width: 100%;
 
                 img {
-                    width: 50%;
+                    width: 40%;
                     border-radius: 50%;
                     border: 2px solid black;
                 }
@@ -313,9 +314,11 @@ body {
         .my-works {
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
             height: 100vh;
             background-color: rgb(33, 50, 146);
             border-bottom: 2px solid black;
+            gap: 6vh;
 
             .main-titles {
                 color: white;
@@ -334,12 +337,11 @@ body {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                margin: 50px 0px;
+                justify-items: center;
+                gap: 5vh;
+                //height: 100%;
 
                 .scrolling-button_container {
-                    display: flex;
-                    justify-content: space-between;
-
                     img {
                         width: 75px;
                         height: 75px;
@@ -422,6 +424,7 @@ body {
             .content-slider {
                 display: flex;
                 justify-content: center;
+                margin: 2%;
 
                 .dot {
                     height: 15px;
@@ -542,8 +545,9 @@ body {
                         }
                     }
                 }
+
                 .request-text {
-                    margin-top: 70px ;
+                    margin-top: 70px;
                     font-family: $typographyPoppins;
                     font-size: 50px;
                 }
@@ -552,10 +556,57 @@ body {
     }
 }
 
-  
-  /* Pantallas de hasta 480px (dispositivos muy pequeños) */
-  @media screen and (max-width: 480px) {
-    html{
-        max-width:100%;
+@media (max-width: 650px) {
+    body {
+        width: 100%;
+        main {
+            .my-description {
+                .main-titles{
+                    padding: 2% 0 0 2%;
+                }
+                .description-container{
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    padding: 5% 0;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 80%;
+                        border-radius: 50%;
+                        border: 2px solid black;
+                    }
+    
+                    p {
+                        width: 100%;
+                        font-family: $typographyPoppins;
+                        font-size: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .my-works{
+                //justify-content: space-around;
+                gap: 0px;
+                .main-titles{
+                    padding: 2% 0 0 2%;
+                }
+                
+                .works-slider{
+                    //flex-direction: column;
+                    gap: 0;
+                    width: 100vw;
+
+                    .scrolling-button_container{
+                        width: 5%;
+                        height: 5%;
+                    }
+                    .scrolling-button_container.visible{
+                        visibility: collapse;
+                    }
+                }
+            }
+        }
     }
-  }
+}

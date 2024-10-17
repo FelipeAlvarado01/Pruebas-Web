@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b2a572fab6.js" crossorigin="anonymous"></script>
 
@@ -24,9 +26,13 @@
                     <img src="../src/images/Icons/xmark-solid.png" alt="">
                 </button>
                 <ul>
+                    <hr>
                     <li id="about-me_button"><a href="#">About Me</a></li>
+                    <hr>
                     <li id="my-works_button"><a href="#">My Works</a></li>
+                    <hr>
                     <li id="contact_button"><a href="#">Contact</a></li>
+                    <hr>
                 </ul>
 
                 <div class="icon-section">
@@ -72,7 +78,7 @@
             <p class="main-titles">My Works</p>
 
             <div class="works-slider">
-                <div class="scrolling-button_container">
+                <div class="scrolling-button_container" id="scrolling-button_container">
                     <img id="scrolling-button_left" src="../src/images/Icons/circle-arrow-left-solid.png" alt="">
                 </div>
 
@@ -154,7 +160,7 @@
 
                 </div>
 
-                <div class="scrolling-button_container">
+                <div class="scrolling-button_container" id="scrolling-button_container">
                     <img id="scrolling-button_right" src="../src/images/Icons/circle-arrow-right-solid.png" alt="">
                 </div>
             </div>
@@ -168,6 +174,7 @@
                 <span class="dot" id="dot"></span>
                 <span class="dot" id="dot"></span>
             </div>
+
         </section>
 
         <section class="contact-me" id="contact-me">
