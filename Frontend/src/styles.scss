@@ -354,6 +354,7 @@ body {
                 }
 
                 .scrolling-container {
+                    width: 100%;
                     display: flex;
                     flex-wrap: nowrap;
                     overflow-x: auto;
@@ -366,6 +367,7 @@ body {
                     .scrolling-card {
                         display: flex;
                         flex-direction: column;
+                        flex: 0 0 5w0%;
                         align-items: center;
                         border: 2px solid black;
                         border-radius: 10px;
@@ -377,18 +379,15 @@ body {
                         cursor: pointer;
 
                         img {
-                            width: 300px;
-                            margin: 0 0 10px 0;
+                            //width: 150%;
                             border-radius: 10px;
                             border: 2px solid black;
                         }
 
                         h4 {
-                            //width: 100%;
                             color: white;
                             font-family: $typographyPoppins;
                             font-size: 25px;
-                            //border-bottom: 2px solid black;
                         }
 
                         hr {
@@ -451,6 +450,7 @@ body {
                     background-color: aqua;
                 }
             }
+
         }
 
         .contact-me {

@@ -275,6 +275,7 @@ body main .my-works .works-slider .scrolling-button_container img:hover {
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -287,6 +288,7 @@ body main .my-works .works-slider .scrolling-container {
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
+  flex: 0 0 50%;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
@@ -298,8 +300,6 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card img {
-  width: 300px;
-  margin: 0 0 10px 0;
   border-radius: 10px;
   border: 2px solid black;
 }
