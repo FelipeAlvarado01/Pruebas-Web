@@ -173,7 +173,7 @@ body .three-container .main-title {
 body .three-container .main-title h1 {
   color: white;
   text-align: center;
-  font-size: 5vw;
+  font-size: 35px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
@@ -245,7 +245,7 @@ body main .my-description .description-container p {
 body main .my-works {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100vh;
   background-color: rgb(33, 50, 146);
   border-bottom: 2px solid black;
@@ -254,7 +254,7 @@ body main .my-works {
 body main .my-works .main-titles {
   color: white;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 40px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 2%;
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
@@ -264,7 +264,6 @@ body main .my-works .works-slider {
   flex-direction: row;
   align-items: center;
   justify-items: center;
-  gap: 5vh;
 }
 body main .my-works .works-slider .scrolling-button_container img {
   width: 75px;
@@ -288,7 +287,7 @@ body main .my-works .works-slider .scrolling-container {
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
-  flex: 0 0 50%;
+  flex: 0 0 25%;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
@@ -300,6 +299,7 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card img {
+  width: 100%;
   border-radius: 10px;
   border: 2px solid black;
 }
@@ -334,6 +334,7 @@ body main .my-works .content-slider {
   display: flex;
   justify-content: center;
   margin: 2%;
+  margin-bottom: 5%;
 }
 body main .my-works .content-slider .dot {
   height: 15px;
@@ -374,7 +375,6 @@ body main .contact-me .main-titles {
 body main .contact-me .form-content {
   padding-top: 50px;
   display: flex;
-  height: auto;
   flex-direction: column;
   align-items: center;
 }
@@ -382,15 +382,13 @@ body main .contact-me .form-content .form-section {
   background-color: rgb(33, 50, 146);
   padding: 20px;
   border-radius: 10px;
-  width: 600px;
-  height: 60vh;
+  width: 80%;
   border: 2px solid black;
 }
 body main .contact-me .form-content .form-section .form-request {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
 }
 body main .contact-me .form-content .form-section .form-request label {
   margin: 0 10px;
@@ -419,7 +417,6 @@ body main .contact-me .form-content .form-section .form-request div {
   justify-content: center;
 }
 body main .contact-me .form-content .form-section .form-request div input[type=submit] {
-  width: 20%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 22px;
   border-radius: 5px;
@@ -435,11 +432,16 @@ body main .contact-me .form-content .form-section .form-request div input[type=s
   cursor: pointer;
 }
 body main .contact-me .form-content .request-text {
-  margin-top: 70px;
+  margin-top: 2%;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 50px;
+  font-size: 5vw;
 }
 
+@media (max-width: 1024px) {
+  body main .my-works .works-slider .scrolling-container .scrolling-card {
+    flex: 0 0 65%;
+  }
+}
 @media (max-width: 650px) {
   body {
     width: 100%;
@@ -482,5 +484,8 @@ body main .contact-me .form-content .request-text {
   }
   body main .my-works .works-slider .scrolling-button_container.visible {
     visibility: collapse;
+  }
+  body main .my-works .works-slider .scrolling-container .scrolling-card {
+    flex: 0 0 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
