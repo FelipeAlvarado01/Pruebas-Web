@@ -367,7 +367,7 @@ body {
                     .scrolling-card {
                         display: flex;
                         flex-direction: column;
-                        flex: 0 0 5w0%;
+                        flex: 0 0 50%;
                         align-items: center;
                         border: 2px solid black;
                         border-radius: 10px;
@@ -456,8 +456,6 @@ body {
         .contact-me {
             display: flex;
             flex-direction: column;
-            //justify-content: space-around;
-            //align-items: center;
             height: 100vh;
             padding: 0 2%;
             gap: 20px;
