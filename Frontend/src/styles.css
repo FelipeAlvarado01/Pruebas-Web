@@ -173,7 +173,7 @@ body .three-container .main-title {
 body .three-container .main-title h1 {
   color: white;
   text-align: center;
-  font-size: 35px;
+  font-size: 8vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
@@ -210,7 +210,7 @@ body main .my-description {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-bottom: 2px solid black;
   padding: 2%;
 }
@@ -241,13 +241,14 @@ body main .my-description .description-container p {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 1rem;
   padding: 1rem;
+  color: black;
 }
 body main .my-works {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-color: rgb(33, 50, 146);
+  background-color: white;
   border-bottom: 2px solid black;
   gap: 6vh;
 }
@@ -287,7 +288,7 @@ body main .my-works .works-slider .scrolling-container {
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
@@ -362,7 +363,7 @@ body main .contact-me {
   flex-direction: column;
   height: 100vh;
   padding: 0 2%;
-  gap: 20px;
+  background-color: white;
 }
 body main .contact-me .main-titles {
   color: white;
@@ -373,16 +374,15 @@ body main .contact-me .main-titles {
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
 }
 body main .contact-me .form-content {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 body main .contact-me .form-content .form-section {
-  background-color: rgb(33, 50, 146);
-  padding: 20px;
+  background-color: rgb(74, 99, 240);
+  padding: 10px;
   border-radius: 10px;
-  width: 80%;
+  width: 70%;
   border: 2px solid black;
 }
 body main .contact-me .form-content .form-section .form-request {
@@ -404,13 +404,29 @@ body main .contact-me .form-content .form-section .form-request textarea {
   background: none;
   border-radius: 5px;
   border: none;
-  padding: 15px 0 10px 10px;
+  padding: 0px 10px;
   width: 100%;
   outline: none;
   border-bottom: 2px solid rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   flex-wrap: wrap;
   resize: none;
+}
+body main .contact-me .form-content .form-section .form-request input::-moz-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+body main .contact-me .form-content .form-section .form-request input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+body main .contact-me .form-content .form-section .form-request textarea::-moz-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+body main .contact-me .form-content .form-section .form-request textarea::placeholder {
+  color: white;
+  opacity: 0.6;
 }
 body main .contact-me .form-content .form-section .form-request div {
   display: flex;
@@ -421,7 +437,7 @@ body main .contact-me .form-content .form-section .form-request div input[type=s
   font-size: 22px;
   border-radius: 5px;
   border: none;
-  margin: 15px 0;
+  margin: 5px 0;
   padding: 10px 20px;
   flex-wrap: wrap;
   border: 2px solid black;
@@ -432,9 +448,9 @@ body main .contact-me .form-content .form-section .form-request div input[type=s
   cursor: pointer;
 }
 body main .contact-me .form-content .request-text {
-  margin-top: 2%;
+  margin-top: 10px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 @media (max-width: 1024px) {
