@@ -455,7 +455,7 @@ body main .contact-me .form-content .request-text {
 
 @media (max-width: 1024px) {
   body main .my-works .works-slider .scrolling-container .scrolling-card {
-    flex: 0 0 65%;
+    flex: 0 0 60%;
   }
 }
 @media (max-width: 650px) {
