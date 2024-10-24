@@ -66,7 +66,7 @@
             <div class="description-container">
                 <img class="my-photo" src="./images/MyPhoto.jpg" alt="">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis
+                <p id="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed! Veritatis, quis. Corporis
                     alias
                     neque deserunt, vel optio fuga ali|quid harum magnam ullam perferendis provident impedit quasi
                     excepturi
@@ -82,8 +82,8 @@
                     <img id="scrolling-button_left" src="../src/images/Icons/circle-arrow-left-solid.png" alt="">
                 </div>
 
-                <div class="scrolling-container" id="scrolling-container" card-index="0">
-                    <div class="scrolling-card" id="scrolling-card">
+                <div class="scrolling-container" id="scrolling-container">
+                    <div class="scrolling-card" id="scrolling-card" data-index="0">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>Computación</h4>
                         <h4>Gráfica</h4>
@@ -92,7 +92,7 @@
                             <li>Three.js</li>
                         </ul>
                     </div>
-                    <div class="scrolling-card" id="scrolling-card" card-index="1">
+                    <div class="scrolling-card" id="scrolling-card" data-index="1">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>Maquetación</h4>
                         <h4>Catálogo</h4>
@@ -102,7 +102,7 @@
                         </ul>
                     </div>
 
-                    <div class="scrolling-card" id="scrolling-card" card-index="2">
+                    <div class="scrolling-card" id="scrolling-card" data-index="2">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>Punto</h4>
                         <h4>Motero</h4>
@@ -116,7 +116,7 @@
                         </ul>
                     </div>
 
-                    <div class="scrolling-card active" id="scrolling-card" card-index="3">
+                    <div class="scrolling-card active" id="scrolling-card" data-index="3">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>Reproductor </h4>
                         <h4>Mp3</h4>
@@ -130,7 +130,7 @@
                         </ul>
                     </div>
 
-                    <div class="scrolling-card" id="scrolling-card" card-index="4">
+                    <div class="scrolling-card" id="scrolling-card" data-index="4">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>WLANS</h4>
                         <h4>Book</h4>
@@ -143,7 +143,7 @@
                             <li>Spring Boot</li>
                         </ul>
                     </div>
-                    <div class="scrolling-card" id="scrolling-card" card-index="5">
+                    <div class="scrolling-card" id="scrolling-card" data-index="5">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>Terkashh</h4>
                         <hr>
@@ -156,7 +156,7 @@
                         </ul>
                     </div>
 
-                    <div class="scrolling-card" id="scrolling-card" card-index="6">
+                    <div class="scrolling-card" id="scrolling-card" data-index="6">
                         <img src="../src/images/VideoFontPage/video-slash-solid.jpg" alt="">
                         <h4>work 7</h4>
                         <hr>
@@ -175,13 +175,13 @@
             </div>
 
             <div class="content-slider">
-                <span class="dot" id="dot"></span>
-                <span class="dot" id="dot"></span>
-                <span class="dot" id="dot"></span>
-                <span class="dot active" id="dot"></span>
-                <span class="dot" id="dot"></span>
-                <span class="dot" id="dot"></span>
-                <span class="dot" id="dot"></span>
+                <span class="dot" id="dot" data-point="0"></span>
+                <span class="dot" id="dot" data-point="1"></span>
+                <span class="dot" id="dot" data-point="2"></span>
+                <span class="dot active" id="dot" data-point="3"></span>
+                <span class="dot" id="dot" data-point="4"></span>
+                <span class="dot" id="dot" data-point="5"></span>
+                <span class="dot" id="dot" data-point="6"></span>
             </div>
 
         </section>

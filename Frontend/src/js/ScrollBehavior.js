@@ -5,14 +5,31 @@ const rightButton = document.querySelector("#scrolling-button_right");
 const scrollingContainer = document.querySelector("#scrolling-container");
 let cardSelected = 3;//La primera carta en mostrarse
 
-centerCard();
+centerCard(cardSelected );
 
-leftButton.addEventListener('click',  () => {
+leftButton.addEventListener('click', () => {
     moveTo(cardSelected - 1);
 });
-rightButton.addEventListener('click',  () => {
+rightButton.addEventListener('click', () => {
     moveTo(cardSelected + 1);
 });
+
+
+//Estas lineas permiten centrar la tarjeta que se selecciona con le mouse
+scrollingCards.forEach(card => {
+    card.addEventListener('click', () => {
+        cardSelected = Number(card.dataset.index);
+        moveTo(cardSelected);
+    });
+});
+
+bot.forEach(point =>{
+    point.addEventListener('click',()=>{
+        cardSelected =  Number(point.dataset.point);
+        moveTo(cardSelected);
+    });
+});
+
 
 function moveTo(index) {
 
@@ -25,7 +42,7 @@ function moveTo(index) {
         cardSelected = index;
     }
 
-    centerCard();
+    centerCard(cardSelected);
 
     //Se muestra el css del elemeno activo 
     scrollingCards.forEach((card, i) => {
@@ -36,7 +53,7 @@ function moveTo(index) {
     });
 
     //Se muestras el css del elemento activo en este caso lo puntos abajo de la cartas
-    bot.forEach((point,i) => {
+    bot.forEach((point, i) => {
         point.classList.remove('active');
         if (i === cardSelected) {
             point.classList.add('active');
@@ -44,32 +61,24 @@ function moveTo(index) {
     });
 }
 
-function centerCard(){
-    const card = scrollingCards[cardSelected];
-    const containerCenter = window.innerWidth/ 2;
+function centerCard(cardToCenter) {
+    const card = scrollingCards[cardToCenter];
+    const containerCenter = window.innerWidth / 2;
     const cardCenter = card.offsetLeft + card.offsetWidth / 2; //Se calcula a partir de la posicion izquierda de cada tarjeta y su mitad
 
     scrollingContainer.scrollLeft = cardCenter - containerCenter;
 }
-/*===============================================================================================*/
-
-scrollingCards.forEach(card => {
-    card.addEventListener('click', () => {
-        console.log(card.dataset.index);
-    });
-});
-
 /*-----------------------------RESPONSIVE------------------------------------*/
 const screenSize = screen.width;
 console.log(screenSize);
 console.log(screen.height);
 
-if(screenSize <= 650){
-  console.log("estoy eliminando las flechas");
-  const scrollingButtonContainer = document.querySelectorAll("#scrolling-button_container");
+if (screenSize <= 650) {
+    console.log("estoy eliminando las flechas");
+    const scrollingButtonContainer = document.querySelectorAll("#scrolling-button_container");
 
-  scrollingButtonContainer.forEach((button)=>{
-    button.classList.add("visible");
-  });
-
+    scrollingButtonContainer.forEach((button) => {
+        button.classList.add("visible");
+    });
 }
+
