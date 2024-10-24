@@ -8,13 +8,22 @@ let colorValue;
 // Se ejecuta cuando el valor del input cambia
 rangeInput.addEventListener('input', function () {
   colorValue = rangeInput.value;
+  const threeContainer = document.querySelector('#three-container');
+  const myDescription = document.querySelector('#my-description');
+  
+  threeContainer.style.borderBottomWidth = "2px";
+  threeContainer.style.borderBottomStyle = "solid";
+  myDescription.style.borderBottomWidth ="2px";
+  myDescription.style.borderBottomStyle = "solid"
+
+  threeContainer.style.borderBottom = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
+  myDescription.style.borderBottom = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
 
   document.querySelector('header').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
-  //document.querySelector('header').style.border = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#slider-change').style.backgroundColor = interpolateColor({r: 245, g: 130, b: 65}, {r: 153, g: 191, b: 242});
   document.querySelector('#menu-burguer img').style.backgroundColor = interpolateColor({r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
   document.querySelector('#down-button img').style.backgroundColor = interpolateColor({r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
-  document.querySelector('#my-description').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
+  myDescription.style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#my-works').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#contact-me').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#form-section').style.backgroundColor = interpolateColor({ r: 74, g: 99, b: 240 },{r: 236, g: 106, b: 32});
