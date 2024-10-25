@@ -504,6 +504,21 @@ body main .contact-me .form-content .request-text {
     font-size: 1rem;
     padding: 1rem;
   }
+  body main .my-description .description-container table,
+  body main .my-description .description-container th,
+  body main .my-description .description-container td {
+    font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1vh 0;
+    width: 30%;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  body main .my-description .description-container th {
+    color: white;
+    background-color: rgb(33, 50, 146);
+  }
   body main .my-works {
     gap: 0px;
     /*.content-slider{

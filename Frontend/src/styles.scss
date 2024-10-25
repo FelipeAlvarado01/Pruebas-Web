@@ -627,6 +627,23 @@ body {
                         font-size: 1rem;
                         padding: 1rem;
                     }
+                    
+                table,
+                th,
+                td {
+                    font-family: $typographyPoppins;
+                    font-size: 1rem;
+                    padding: 1rem;
+                    margin: 1vh 0;
+                    width: 30%;
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                }
+
+                th{
+                    color: white;
+                    background-color: rgb(33, 50, 146);
+                }
                 }
             }
 
