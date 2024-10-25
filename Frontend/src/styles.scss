@@ -27,7 +27,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    //width: auto;
+    //background-color: red;
 
     .three-container canvas {
         max-width: 100% !important;
@@ -304,6 +304,23 @@ body {
                     padding: 1rem;
                     color: black;
                 }
+
+                table,
+                th,
+                td {
+                    font-family: $typographyPoppins;
+                    font-size: 2rem;
+                    padding: 1rem;
+                    margin: 0 0 0 1vw;
+                    width: 50%;
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                }
+
+                th{
+                    color: white;
+                    background-color: rgb(33, 50, 146);
+                }
             }
         }
 
@@ -361,7 +378,7 @@ body {
                     .scrolling-card {
                         display: flex;
                         flex-direction: column;
-                        flex: 0 0 20%;
+                        flex: 0 0 240px;
                         align-items: center;
                         border: 2px solid black;
                         border-radius: 10px;
@@ -417,13 +434,14 @@ body {
             .content-slider {
                 display: flex;
                 justify-content: center;
-                margin: 2%;
-                margin-bottom: 5%;
+                margin: 2% 0 5% 0;
+                //margin-bottom: 5%;
+                gap: 0 7px;
 
                 .dot {
                     height: 15px;
                     width: 15px;
-                    margin: 0 5px;
+                    //margin: 0 5px;
                     background-color: rgb(187, 187, 187);
                     border-radius: 50%;
                     display: inline-block;
@@ -470,24 +488,25 @@ body {
             }
 
             .form-content {
-                //padding-top: 20px;
                 display: flex;
-                //height: auto;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
 
                 .form-section {
                     background-color: rgb(74, 99, 240);
                     padding: 10px;
                     border-radius: 10px;
                     width: 70%;
+                    height: 70%;
                     border: 2px solid black;
 
                     .form-request {
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-around;
-                        //height: 100%;
+                        justify-content: space-between;
+                        height: 100%;
 
                         label {
                             margin: 0 10px;
@@ -513,15 +532,16 @@ body {
                             resize: none;
                         }
 
-                        
+
                         input::placeholder {
                             color: $secondColor;
                             opacity: 0.7;
-                          }
-                          textarea::placeholder{
+                        }
+
+                        textarea::placeholder {
                             color: $secondColor;
                             opacity: 0.6;
-                          }
+                        }
 
                         div {
                             display: flex;
@@ -550,7 +570,7 @@ body {
                 }
 
                 .request-text {
-                    margin-top: 10px;
+                    margin-top: 20px;
                     font-family: $typographyPoppins;
                     font-size: 4vw;
                 }
@@ -566,7 +586,7 @@ body {
                 .works-slider {
                     .scrolling-container {
                         .scrolling-card {
-                            flex: 0 0 60%;
+                            flex: 0 0 50%;
                         }
                     }
                 }
@@ -577,7 +597,9 @@ body {
 
 @media (max-width: 650px) {
     body {
+        overflow-x: hidden;
         width: 100%;
+        background-color: blue;
 
         main {
             .my-description {
@@ -634,9 +656,17 @@ body {
                         .scrolling-card {
                             flex: 0 0 80%;
                         }
+
                     }
                 }
+
+                /*.content-slider{
+                    margin: 0 0 50% 0 ;
+                    padding: 0;
+                }*/
             }
+
+            .contact-me {}
         }
     }
 }

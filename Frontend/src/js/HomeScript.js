@@ -10,14 +10,20 @@ rangeInput.addEventListener('input', function () {
   colorValue = rangeInput.value;
   const threeContainer = document.querySelector('#three-container');
   const myDescription = document.querySelector('#my-description');
+  const myWorks = document.querySelector('#my-works');
   
   threeContainer.style.borderBottomWidth = "2px";
   threeContainer.style.borderBottomStyle = "solid";
+  threeContainer.style.borderBottomColor = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
+
   myDescription.style.borderBottomWidth ="2px";
   myDescription.style.borderBottomStyle = "solid"
+  myDescription.style.borderBottomColor = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
 
-  threeContainer.style.borderBottom = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
-  myDescription.style.borderBottom = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
+  myWorks.style.borderBottomWidth ="2px";
+  myWorks.style.borderBottomStyle = "solid"
+  myWorks.style.borderBottomColor = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
+
 
   document.querySelector('header').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#slider-change').style.backgroundColor = interpolateColor({r: 245, g: 130, b: 65}, {r: 153, g: 191, b: 242});
@@ -28,6 +34,7 @@ rangeInput.addEventListener('input', function () {
   document.querySelector('#contact-me').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#form-section').style.backgroundColor = interpolateColor({ r: 74, g: 99, b: 240 },{r: 236, g: 106, b: 32});
   document.querySelector('#text-description').style.color = interpolateColor({ r: 0, g: 0, b: 0 },{r: 255, g: 255, b: 255});
+  document.querySelector('#request-text').style.color = interpolateColor({ r: 0, g: 0, b: 0 },{r: 255, g: 255, b: 255});
 
   cardsColor.forEach((card) => {
     card.style.backgroundColor = interpolateColor({r: 255, g: 255, b: 255}, {r: 245, g: 130, b: 65});
