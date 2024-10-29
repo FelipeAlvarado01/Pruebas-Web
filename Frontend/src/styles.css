@@ -210,7 +210,6 @@ body main .my-description {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: white;
   border-bottom: 2px solid black;
   padding: 2%;
 }
@@ -254,6 +253,9 @@ body main .my-description .description-container td {
   border: 2px solid black;
   border-collapse: collapse;
 }
+body main .my-description .description-container td {
+  background-color: rgb(230, 223, 223);
+}
 body main .my-description .description-container th {
   color: white;
   background-color: rgb(33, 50, 146);
@@ -263,7 +265,6 @@ body main .my-works {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-color: white;
   border-bottom: 2px solid black;
   gap: 6vh;
 }
@@ -308,7 +309,7 @@ body main .my-works .works-slider .scrolling-container .scrolling-card {
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px 30px;
-  background-color: rgb(74, 99, 240);
+  background-color: rgb(33, 50, 146);
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0.5;
   transform: scale(0.9);
@@ -377,7 +378,6 @@ body main .contact-me {
   flex-direction: column;
   height: 100vh;
   padding: 0 2%;
-  background-color: white;
 }
 body main .contact-me .main-titles {
   color: white;
@@ -395,7 +395,7 @@ body main .contact-me .form-content {
   height: 100%;
 }
 body main .contact-me .form-content .form-section {
-  background-color: rgb(74, 99, 240);
+  background-color: rgb(33, 50, 146);
   padding: 10px;
   border-radius: 10px;
   width: 70%;
@@ -466,6 +466,7 @@ body main .contact-me .form-content .form-section .form-request div input[type=s
   cursor: pointer;
 }
 body main .contact-me .form-content .request-text {
+  color: rgb(0, 0, 0);
   margin-top: 20px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 4vw;

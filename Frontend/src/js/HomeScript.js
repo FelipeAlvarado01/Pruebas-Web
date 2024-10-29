@@ -1,8 +1,6 @@
 /*----------------------------------------CAMBIO DE COLOR----------------------------------*/
 const rangeInput = document.getElementById('slider-change');
-
 const cardsColor = document.querySelectorAll('#scrolling-card');
-
 let colorValue;
 
 // Se ejecuta cuando el valor del input cambia
@@ -11,10 +9,15 @@ rangeInput.addEventListener('input', function () {
   const threeContainer = document.querySelector('#three-container');
   const myDescription = document.querySelector('#my-description');
   const myWorks = document.querySelector('#my-works');
+  const contactMe = document.querySelector('#contact-me');
+  const ths = document.querySelectorAll('th');
   
+  threeContainer.style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   threeContainer.style.borderBottomWidth = "2px";
   threeContainer.style.borderBottomStyle = "solid";
   threeContainer.style.borderBottomColor = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
+
+  document.querySelector('main').style.backgroundColor = interpolateColor({ r: 255, g: 255, b: 255 },{ r: 0, g: 0, b: 0 });
 
   myDescription.style.borderBottomWidth ="2px";
   myDescription.style.borderBottomStyle = "solid"
@@ -24,20 +27,19 @@ rangeInput.addEventListener('input', function () {
   myWorks.style.borderBottomStyle = "solid"
   myWorks.style.borderBottomColor = interpolateColor({ r: 0, g: 0, b: 0 },{ r: 235, g: 106, b: 32 });
 
-
-  document.querySelector('header').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
   document.querySelector('#slider-change').style.backgroundColor = interpolateColor({r: 245, g: 130, b: 65}, {r: 153, g: 191, b: 242});
   document.querySelector('#menu-burguer img').style.backgroundColor = interpolateColor({r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
   document.querySelector('#down-button img').style.backgroundColor = interpolateColor({r: 32, g: 46, b: 128}, {r: 236, g: 106, b: 32});
-  myDescription.style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
-  document.querySelector('#my-works').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
-  document.querySelector('#contact-me').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{ r: 0, g: 0, b: 0 });
-  document.querySelector('#form-section').style.backgroundColor = interpolateColor({ r: 74, g: 99, b: 240 },{r: 236, g: 106, b: 32});
-  document.querySelector('#text-description').style.color = interpolateColor({ r: 0, g: 0, b: 0 },{r: 255, g: 255, b: 255});
+  document.querySelector('#form-section').style.backgroundColor = interpolateColor({ r: 33, g: 50, b: 146 },{r: 236, g: 106, b: 32});
   document.querySelector('#request-text').style.color = interpolateColor({ r: 0, g: 0, b: 0 },{r: 255, g: 255, b: 255});
 
+  ths.forEach((th)=>{
+    th.style.backgroundColor = interpolateColor({r: 33, g: 50, b: 146}, {r: 236, g: 106, b: 32});
+  });
+
   cardsColor.forEach((card) => {
-    card.style.backgroundColor = interpolateColor({r: 255, g: 255, b: 255}, {r: 245, g: 130, b: 65});
+    card.style.backgroundColor = interpolateColor({r: 33, g: 50, b: 146}, {r: 236, g: 106, b: 32});
+    console.log("hola");
   });
 });
 
