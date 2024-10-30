@@ -170,6 +170,13 @@ body .three-container .main-title {
   margin: 20px 0;
   z-index: 2;
 }
+body .three-container .main-title h4 {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
+}
 body .three-container .main-title h1 {
   color: white;
   text-align: center;
@@ -481,7 +488,6 @@ body main .contact-me .form-content .request-text {
   body {
     overflow-x: hidden;
     width: 100%;
-    background-color: blue;
   }
   body main .my-description .main-titles {
     padding: 2% 0 0 2%;

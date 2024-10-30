@@ -149,7 +149,6 @@ body {
                                 2px -2px 2px black,
                                 -2px 2px 2px black,
                                 2px 2px 2px black;
-
                         }
                     }
 
@@ -214,6 +213,17 @@ body {
             margin: 20px 0;
             z-index: 2;
 
+            h4{
+                color: white;
+                text-align: center;
+                font-size: 3vw;
+                font-family: $typographyPoppins;
+                text-shadow:
+                    -2px -2px 0px black,
+                    2px -2px 0px black,
+                    -2px 2px 0px black,
+                    2px 2px 0px black;
+            }
             h1 {
                 color: white;
                 text-align: center;
@@ -603,7 +613,7 @@ body {
     body {
         overflow-x: hidden;
         width: 100%;
-        background-color: blue;
+        //background-color: blue;
 
         main {
             .my-description {
