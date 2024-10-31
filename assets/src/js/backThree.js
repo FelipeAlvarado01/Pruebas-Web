@@ -1,5 +1,5 @@
-import * as THREE from "../../node_modules/three/build/three.module.js";
-import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/OrbitControls.js";
+//import * as THREE from "../../node_modules/three/build/three.module.js";
+//import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/OrbitControls.js";
 //import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
 
         
@@ -10,7 +10,7 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
     //renderer.setClearColor(0x000000, 1);
     document.getElementById('three-container').appendChild( renderer.domElement ); //Se obtiene el div del html y se le agrega el renderer
     
-    const controls = new OrbitControls( camera, renderer.domElement );
+    //const controls = new OrbitControls( camera, renderer.domElement );
 
 
     const geometry = new THREE.BoxGeometry();
@@ -22,6 +22,7 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
         new THREE.MeshBasicMaterial({ color: 0xff00ff }), 
         new THREE.MeshBasicMaterial({ color: 0x00ffff }) 
     ];    
+
     const cube = new THREE.Mesh(geometry, materials);
     cube.position.set(0, 0 , 0);
     scene.add(cube);
