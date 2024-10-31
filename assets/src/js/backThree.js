@@ -39,7 +39,7 @@ import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/Or
         cube.rotation.x += 0.004;
         cube.rotation.y += 0.004;
         renderer.render(scene, camera);
-        //console.log("hola");
+        console.log("hola");
         //console.log(threeContainer.clientWidth);
     }
 
