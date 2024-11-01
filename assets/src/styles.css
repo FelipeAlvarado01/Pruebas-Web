@@ -70,7 +70,7 @@ body .three-container .main-menu .menu-content {
   flex-direction: column;
   align-items: start;
   position: absolute;
-  padding: 17px;
+  padding: 10px;
   width: 50vw;
   gap: 1rem;
   z-index: 5;
@@ -221,12 +221,16 @@ body main .my-description {
   padding: 2%;
 }
 body main .my-description .main-titles {
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 0;
-  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+  /*text-shadow:
+      -2px -2px 2px black,
+      2px -2px 2px black,
+      -2px 2px 2px black,
+      2px 2px 2px black;*/
 }
 body main .my-description .description-container {
   display: flex;
@@ -276,12 +280,16 @@ body main .my-works {
   gap: 6vh;
 }
 body main .my-works .main-titles {
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 2%;
-  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+  /*text-shadow:
+      -2px -2px 2px black,
+      2px -2px 2px black,
+      -2px 2px 2px black,
+      2px 2px 2px black;*/
 }
 body main .my-works .works-slider {
   display: flex;
@@ -379,6 +387,9 @@ body main .my-works .content-slider .dot.active {
 body main .my-works .content-slider .dot.active:hover {
   background-color: aqua;
 }
+body main .my-works .button-responsive.visible {
+  visibility: collapse;
+}
 body main .contact-me {
   display: flex;
   flex-direction: column;
@@ -386,12 +397,16 @@ body main .contact-me {
   padding: 0 2%;
 }
 body main .contact-me .main-titles {
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 0;
-  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+  /*text-shadow:
+      -2px -2px 2px black,
+      2px -2px 2px black,
+      -2px 2px 2px black,
+      2px 2px 2px black;*/
 }
 body main .contact-me .form-content {
   display: flex;
@@ -475,12 +490,12 @@ body main .contact-me .form-content .request-text {
   color: rgb(0, 0, 0);
   margin-top: 20px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 @media (max-width: 1024px) {
   body main .my-works .works-slider .scrolling-container .scrolling-card {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
   }
 }
 @media (max-width: 650px) {
@@ -488,6 +503,18 @@ body main .contact-me .form-content .request-text {
   body {
     margin: 0;
     padding: 0;
+  }
+  html .three-container .main-menu .menu-content,
+  body .three-container .main-menu .menu-content {
+    width: 100vw;
+  }
+  html .three-container .main-menu .menu-content ul li a,
+  body .three-container .main-menu .menu-content ul li a {
+    font-size: 10vw;
+  }
+  html .three-container .main-title h4,
+  body .three-container .main-title h4 {
+    font-size: 5vw;
   }
   html main .my-description .main-titles,
   body main .my-description .main-titles {
@@ -536,7 +563,10 @@ body main .contact-me .form-content .request-text {
   }
   html main .my-works,
   body main .my-works {
-    gap: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    gap: 2vh;
   }
   html main .my-works .main-titles,
   body main .my-works .main-titles {
@@ -548,10 +578,10 @@ body main .contact-me .form-content .request-text {
     align-items: center;
     width: 100vw;
   }
-  html main .my-works .works-slider .scrolling-button_container,
-  body main .my-works .works-slider .scrolling-button_container {
-    width: 0%;
-    height: 0%;
+  html main .my-works .works-slider .scrolling-button_container img,
+  body main .my-works .works-slider .scrolling-button_container img {
+    width: 0px;
+    height: 0px;
   }
   html main .my-works .works-slider .scrolling-button_container.visible,
   body main .my-works .works-slider .scrolling-button_container.visible {
@@ -559,6 +589,34 @@ body main .contact-me .form-content .request-text {
   }
   html main .my-works .works-slider .scrolling-container .scrolling-card,
   body main .my-works .works-slider .scrolling-container .scrolling-card {
-    flex: 0 0 80%;
+    flex: 0 0 70%;
+  }
+  html main .my-works .content-slider,
+  body main .my-works .content-slider {
+    margin: 0;
+    gap: 0 7px;
+  }
+  html main .my-works .button-responsive,
+  body main .my-works .button-responsive {
+    display: flex;
+    justify-content: center;
+    gap: 20px 50px;
+  }
+  html main .my-works .button-responsive .scrolling-button_container img,
+  body main .my-works .button-responsive .scrolling-button_container img {
+    width: 50px;
+    height: 50px;
+  }
+  html main .my-works .button-responsive .scrolling-button_container img:hover,
+  body main .my-works .button-responsive .scrolling-button_container img:hover {
+    cursor: pointer;
+  }
+  html main .contact-me .form-content .form-section,
+  body main .contact-me .form-content .form-section {
+    width: 90%;
+  }
+  html main .contact-me .form-content .request-text,
+  body main .contact-me .form-content .request-text {
+    font-size: 6vw;
   }
 }/*# sourceMappingURL=styles.css.map */
