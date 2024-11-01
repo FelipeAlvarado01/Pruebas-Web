@@ -10,11 +10,11 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/*html {
+    scroll-behavior: smooth;
+}*/
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -173,7 +173,7 @@ body .three-container .main-title {
 body .three-container .main-title h4 {
   color: white;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
@@ -285,7 +285,6 @@ body main .my-works .main-titles {
 }
 body main .my-works .works-slider {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-items: center;
 }
@@ -485,13 +484,16 @@ body main .contact-me .form-content .request-text {
   }
 }
 @media (max-width: 650px) {
+  html,
   body {
-    overflow-x: hidden;
-    width: 100%;
+    margin: 0;
+    padding: 0;
   }
+  html main .my-description .main-titles,
   body main .my-description .main-titles {
     padding: 2% 0 0 2%;
   }
+  html main .my-description .description-container,
   body main .my-description .description-container {
     flex-direction: column;
     align-content: center;
@@ -500,17 +502,22 @@ body main .contact-me .form-content .request-text {
     width: 100%;
     height: 100%;
   }
+  html main .my-description .description-container img,
   body main .my-description .description-container img {
     width: 80%;
     border-radius: 50%;
     border: 2px solid black;
   }
+  html main .my-description .description-container p,
   body main .my-description .description-container p {
     width: 100%;
     font-family: "Poppins", "Arial Narrow Bold", sans-serif;
     font-size: 1rem;
     padding: 1rem;
   }
+  html main .my-description .description-container table,
+  html main .my-description .description-container th,
+  html main .my-description .description-container td,
   body main .my-description .description-container table,
   body main .my-description .description-container th,
   body main .my-description .description-container td {
@@ -522,31 +529,35 @@ body main .contact-me .form-content .request-text {
     border: 2px solid black;
     border-collapse: collapse;
   }
+  html main .my-description .description-container th,
   body main .my-description .description-container th {
     color: white;
     background-color: rgb(33, 50, 146);
   }
+  html main .my-works,
   body main .my-works {
     gap: 0px;
-    /*.content-slider{
-        margin: 0 0 50% 0 ;
-        padding: 0;
-    }*/
   }
+  html main .my-works .main-titles,
   body main .my-works .main-titles {
     padding: 2% 0 0 2%;
   }
+  html main .my-works .works-slider,
   body main .my-works .works-slider {
-    gap: 0;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
   }
+  html main .my-works .works-slider .scrolling-button_container,
   body main .my-works .works-slider .scrolling-button_container {
-    width: 5%;
-    height: 5%;
+    width: 0%;
+    height: 0%;
   }
+  html main .my-works .works-slider .scrolling-button_container.visible,
   body main .my-works .works-slider .scrolling-button_container.visible {
     visibility: collapse;
   }
+  html main .my-works .works-slider .scrolling-container .scrolling-card,
   body main .my-works .works-slider .scrolling-container .scrolling-card {
     flex: 0 0 80%;
   }

@@ -15,19 +15,18 @@ $secondColor: white;
 * {
     margin: 0;
     padding: 0;
-    //font-size: 100%;
     box-sizing: border-box;
 }
 
-html {
+/*html {
     scroll-behavior: smooth;
-}
+}*/
 
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    //background-color: red;
 
     .three-container canvas {
         max-width: 100% !important;
@@ -213,10 +212,10 @@ body {
             margin: 20px 0;
             z-index: 2;
 
-            h4{
+            h4 {
                 color: white;
                 text-align: center;
-                font-size: 3vw;
+                font-size: 2.5vw;
                 font-family: $typographyPoppins;
                 text-shadow:
                     -2px -2px 0px black,
@@ -224,6 +223,7 @@ body {
                     -2px 2px 0px black,
                     2px 2px 0px black;
             }
+
             h1 {
                 color: white;
                 text-align: center;
@@ -271,6 +271,7 @@ body {
     }
 
     main {
+
         //background-color: rgb(134, 134, 134);
         .my-description {
             display: flex;
@@ -327,10 +328,12 @@ body {
                     border: 2px solid black;
                     border-collapse: collapse;
                 }
-                td{
+
+                td {
                     background-color: rgb(230, 223, 223);
                 }
-                th{
+
+                th {
                     color: white;
                     background-color: rgb(33, 50, 146);
                 }
@@ -361,7 +364,7 @@ body {
 
             .works-slider {
                 display: flex;
-                flex-direction: row;
+                //flex-direction: row;
                 align-items: center;
                 justify-items: center;
 
@@ -610,10 +613,11 @@ body {
 }
 
 @media (max-width: 650px) {
+
+    html,
     body {
-        overflow-x: hidden;
-        width: 100%;
-        //background-color: blue;
+        margin: 0;
+        padding: 0;
 
         main {
             .my-description {
@@ -641,23 +645,23 @@ body {
                         font-size: 1rem;
                         padding: 1rem;
                     }
-                    
-                table,
-                th,
-                td {
-                    font-family: $typographyPoppins;
-                    font-size: 1rem;
-                    padding: 1rem;
-                    margin: 1vh 0;
-                    width: 30%;
-                    border: 2px solid black;
-                    border-collapse: collapse;
-                }
 
-                th{
-                    color: white;
-                    background-color: rgb(33, 50, 146);
-                }
+                    table,
+                    th,
+                    td {
+                        font-family: $typographyPoppins;
+                        font-size: 1rem;
+                        padding: 1rem;
+                        margin: 1vh 0;
+                        width: 30%;
+                        border: 2px solid black;
+                        border-collapse: collapse;
+                    }
+
+                    th {
+                        color: white;
+                        background-color: rgb(33, 50, 146);
+                    }
                 }
             }
 
@@ -670,13 +674,13 @@ body {
                 }
 
                 .works-slider {
-                    //flex-direction: column;
-                    gap: 0;
+                    flex-direction: column;
+                    align-items: center;
                     width: 100vw;
 
                     .scrolling-button_container {
-                        width: 5%;
-                        height: 5%;
+                        width: 0%;
+                        height: 0%;
                     }
 
                     .scrolling-button_container.visible {
@@ -687,14 +691,8 @@ body {
                         .scrolling-card {
                             flex: 0 0 80%;
                         }
-
                     }
                 }
-
-                /*.content-slider{
-                    margin: 0 0 50% 0 ;
-                    padding: 0;
-                }*/
             }
         }
     }

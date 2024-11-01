@@ -9,6 +9,7 @@ centerCard(cardSelected );
 
 leftButton.addEventListener('click', () => {
     moveTo(cardSelected - 1);
+    console.log("Se mueve");
 });
 rightButton.addEventListener('click', () => {
     moveTo(cardSelected + 1);
@@ -70,11 +71,10 @@ function centerCard(cardToCenter) {
 }
 /*-----------------------------RESPONSIVE------------------------------------*/
 const screenSize = screen.width;
-console.log(screenSize);
+//console.log(screenSize);
 //console.log(screen.height);
 
 if (screenSize <= 650) {
-    console.log("estoy eliminando las flechas");
     const scrollingButtonContainer = document.querySelectorAll("#scrolling-button_container");
 
     scrollingButtonContainer.forEach((button) => {

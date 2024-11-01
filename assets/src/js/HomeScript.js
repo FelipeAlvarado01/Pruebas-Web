@@ -39,7 +39,6 @@ rangeInput.addEventListener('input', function () {
 
   cardsColor.forEach((card) => {
     card.style.backgroundColor = interpolateColor({r: 33, g: 50, b: 146}, {r: 236, g: 106, b: 32});
-    console.log("hola");
   });
 });
 
@@ -67,4 +66,9 @@ icon.addEventListener('click', function () {
     icon.style.transform = 'translateY(0)';
   }, 200);
 });
-
+/*--------------------LIMPIA FORM----------------------------*/
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}

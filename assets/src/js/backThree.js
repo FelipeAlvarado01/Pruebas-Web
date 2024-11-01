@@ -40,8 +40,7 @@
         cube.rotation.x += 0.004;
         cube.rotation.y += 0.004;
         renderer.render(scene, camera);
-        console.log("hola");
-        //console.log(threeContainer.clientWidth);
+
     }
 
     animate();
