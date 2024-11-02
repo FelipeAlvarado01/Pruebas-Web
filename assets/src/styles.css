@@ -223,7 +223,7 @@ body main .my-description {
 body main .my-description .main-titles {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 0;
   /*text-shadow:
@@ -282,7 +282,7 @@ body main .my-works {
 body main .my-works .main-titles {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 2%;
   /*text-shadow:
@@ -318,6 +318,7 @@ body main .my-works .works-slider .scrolling-container {
 body main .my-works .works-slider .scrolling-container .scrolling-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   flex: 0 0 240px;
   align-items: center;
   border: 2px solid black;
@@ -347,9 +348,29 @@ body main .my-works .works-slider .scrolling-container .scrolling-card hr {
   margin: 5px 0;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
+  text-align: center;
   list-style-type: none;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 20px;
+}
+body main .my-works .works-slider .scrolling-container .scrolling-card a {
+  display: inline-block;
+  width: 100%;
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  border: 2px solid black;
+  background-color: white;
+  color: #000000;
+}
+body main .my-works .works-slider .scrolling-container .scrolling-card a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card:hover {
   background-color: rgb(66, 77, 138);
@@ -399,7 +420,7 @@ body main .contact-me {
 body main .contact-me .main-titles {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   padding: 10px 0;
   /*text-shadow:
