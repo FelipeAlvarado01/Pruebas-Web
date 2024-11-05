@@ -71,6 +71,7 @@ body .three-container .main-menu .menu-content {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
   position: absolute;
   padding: 10px;
   width: 50vw;
@@ -128,6 +129,16 @@ body .three-container .main-menu .menu-content ul li a {
 body .three-container .main-menu .menu-content ul li:hover {
   background-color: rgba(242, 242, 240, 0.2);
   cursor: pointer;
+}
+body .three-container .main-menu .menu-content .icon-section ul {
+  display: flex;
+  gap: 50px;
+}
+body .three-container .main-menu .menu-content .icon-section ul li,
+body .three-container .main-menu .menu-content .icon-section ul a,
+body .three-container .main-menu .menu-content .icon-section ul img {
+  justify-content: center;
+  width: 50px;
 }
 body .three-container .main-menu .switch-changes_color {
   z-index: 3;
@@ -381,7 +392,6 @@ body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
 body main .my-works .content-slider {
   display: flex;
   justify-content: center;
-  margin: 2% 0 5% 0;
   gap: 0 7px;
 }
 body main .my-works .content-slider .dot {
@@ -518,7 +528,9 @@ body main .contact-me .form-content .request-text {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 5vw;
 }
-
+body footer {
+  background-color: rgb(16, 26, 83);
+}
 @media (max-width: 1024px) {
   body main .my-works .works-slider .scrolling-container .scrolling-card {
     flex: 0 0 40%;
@@ -627,6 +639,10 @@ body main .contact-me .form-content .request-text {
     display: flex;
     justify-content: center;
     gap: 20px 50px;
+  }
+  html main .my-works .button-responsive .scrolling-button_container,
+  body main .my-works .button-responsive .scrolling-button_container {
+    margin: 20px 20px;
   }
   html main .my-works .button-responsive .scrolling-button_container img,
   body main .my-works .button-responsive .scrolling-button_container img {
