@@ -530,7 +530,48 @@ body main .contact-me .form-content .request-text {
 }
 body footer {
   background-color: rgb(16, 26, 83);
+  height: 40vh;
 }
+body footer .icon-section_footer {
+  width: 100%;
+  align-content: center;
+}
+body footer .icon-section_footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10vh;
+}
+body footer .icon-section_footer ul li {
+  list-style-type: none;
+}
+body footer .icon-section_footer ul li a {
+  border: none;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+body footer .icon-section_footer ul li a img {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 50px;
+}
+body footer .icon-section_footer ul li a p {
+  text-align: center;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
+  color: white;
+  font-size: 10px;
+}
+body footer .icon-section_footer .rights-text {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
 @media (max-width: 1024px) {
   body main .my-works .works-slider .scrolling-container .scrolling-card {
     flex: 0 0 40%;

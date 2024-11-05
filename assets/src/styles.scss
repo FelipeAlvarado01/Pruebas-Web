@@ -165,7 +165,7 @@ body {
 
                         li,
                         a,
-                        img{
+                        img {
                             justify-content: center;
                             width: 50px;
                         }
@@ -455,7 +455,6 @@ body {
                             font-size: 20px;
                             border-radius: 5px;
                             border: none;
-                            //margin-top: px;
                             padding: 5px 10px;
                             border: 2px solid black;
                             background-color: white;
@@ -484,17 +483,14 @@ body {
                 }
             }
 
-
             .content-slider {
                 display: flex;
                 justify-content: center;
-                //margin: 0% 0 2% 0;
                 gap: 0 7px;
 
                 .dot {
                     height: 15px;
                     width: 15px;
-                    //margin: 0 5px;
                     background-color: rgb(187, 187, 187);
                     border-radius: 50%;
                     display: inline-block;
@@ -523,7 +519,6 @@ body {
 
             .button-responsive {
                 display: flex;
-                //align-content: center;
                 justify-content: center;
                 gap: 0;
 
@@ -649,12 +644,51 @@ body {
             }
         }
     }
-    
-    footer{
+
+    footer {
         background-color: rgb(16, 26, 83);
-        .icon-section_footer{
-            ul,li{
+        height: 40vh;
+        .icon-section_footer {
+            width: 100%;
+            align-content: center;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 10vh;
                 
+                li {
+                    list-style-type: none;
+                    a {
+                        //display: inline-block;
+                        border: none;
+                        text-decoration: none;
+                        align-content: center;
+                        justify-content:center ;
+                        width: 100%;
+                        img {
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 10px;
+                            width: 50px;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-family: $typographySometypeMono;
+                            color: white;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .rights-text{
+                font-family: $typographyPoppins;
+                font-size: 10px;
+                color: white;
+                text-align: center;
+                margin-top: 50px;
             }
         }
     }
@@ -797,6 +831,7 @@ body {
 
                     .scrolling-button_container {
                         margin: 20px 20px;
+
                         img {
                             width: 50px;
                             height: 50px;
