@@ -4,15 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*html {
-    scroll-behavior: smooth;
-}*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   display: flex;
@@ -181,7 +183,7 @@ body .three-container .main-title h1 {
   color: white;
   text-align: center;
   font-size: 8vw;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
 body .three-container .down-button {
@@ -223,8 +225,8 @@ body main .my-description {
 body main .my-description .main-titles {
   color: black;
   text-decoration: none;
-  font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 0;
   /*text-shadow:
       -2px -2px 2px black,
@@ -242,21 +244,13 @@ body main .my-description .description-container {
   width: 100%;
 }
 body main .my-description .description-container img {
-  width: 40%;
+  width: 35%;
   border-radius: 50%;
   border: 2px solid black;
-}
-body main .my-description .description-container p {
-  width: 50%;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 1rem;
-  padding: 1rem;
-  color: black;
 }
 body main .my-description .description-container table,
 body main .my-description .description-container th,
 body main .my-description .description-container td {
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 2rem;
   padding: 1rem;
   margin: 0 0 0 1vw;
@@ -265,9 +259,11 @@ body main .my-description .description-container td {
   border-collapse: collapse;
 }
 body main .my-description .description-container td {
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   background-color: rgb(230, 223, 223);
 }
 body main .my-description .description-container th {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   color: white;
   background-color: rgb(33, 50, 146);
 }
@@ -275,7 +271,7 @@ body main .my-works {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: auto;
   border-bottom: 2px solid black;
   gap: 6vh;
 }
@@ -283,7 +279,7 @@ body main .my-works .main-titles {
   color: black;
   text-decoration: none;
   font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 2%;
   /*text-shadow:
       -2px -2px 2px black,
@@ -350,13 +346,13 @@ body main .my-works .works-slider .scrolling-container .scrolling-card hr {
 body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
   text-align: center;
   list-style-type: none;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   font-size: 20px;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card a {
   display: inline-block;
   width: 100%;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -411,6 +407,15 @@ body main .my-works .content-slider .dot.active:hover {
 body main .my-works .button-responsive.visible {
   visibility: collapse;
 }
+body main .my-works .button-responsive {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+body main .my-works .button-responsive .scrolling-button_container img {
+  width: 0px;
+  height: 0px;
+}
 body main .contact-me {
   display: flex;
   flex-direction: column;
@@ -421,7 +426,7 @@ body main .contact-me .main-titles {
   color: black;
   text-decoration: none;
   font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 0;
   /*text-shadow:
       -2px -2px 2px black,
@@ -586,7 +591,7 @@ body main .contact-me .form-content .request-text {
   body main .my-works {
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: auto;
     gap: 2vh;
   }
   html main .my-works .main-titles,

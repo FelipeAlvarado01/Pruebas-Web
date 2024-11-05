@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 $typographyPoppins: 'Poppins', 'Arial Narrow Bold', sans-serif;
 $typographyInter: 'Inter', 'Arial Narrow Bold', sans-serif;
 $typographyRoboto: 'Roboto', 'Arial Narrow Bold', sans-serif;
 $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
+$typographySometypeMono: 'Sometype Mono', 'Arial Narrow Bold';
 
 $secondColor: white;
 
@@ -18,10 +19,9 @@ $secondColor: white;
     box-sizing: border-box;
 }
 
-/*html {
+html {
     scroll-behavior: smooth;
-}*/
-
+}
 
 body {
     width: 100%;
@@ -228,7 +228,7 @@ body {
                 color: white;
                 text-align: center;
                 font-size: 8vw;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 text-shadow:
                     -2px -2px 0px black,
                     2px -2px 0px black,
@@ -284,8 +284,8 @@ body {
             .main-titles {
                 color: black;
                 text-decoration: none;
-                font-size: 35px;
-                font-family: $typographyPoppins;
+                font-size: 40px;
+                font-family: $typographySometypeMono;
                 padding: 10px 0;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -304,23 +304,15 @@ body {
                 width: 100%;
 
                 img {
-                    width: 40%;
+                    width: 35%;
                     border-radius: 50%;
                     border: 2px solid black;
                 }
 
-                p {
-                    width: 50%;
-                    font-family: $typographyPoppins;
-                    font-size: 1rem;
-                    padding: 1rem;
-                    color: black;
-                }
 
                 table,
                 th,
                 td {
-                    font-family: $typographyPoppins;
                     font-size: 2rem;
                     padding: 1rem;
                     margin: 0 0 0 1vw;
@@ -330,10 +322,13 @@ body {
                 }
 
                 td {
+                    font-family: $typographySometypeMono;
+                    //color: red;
                     background-color: rgb(230, 223, 223);
                 }
 
                 th {
+                    font-family: $typographyPoppins;
                     color: white;
                     background-color: rgb(33, 50, 146);
                 }
@@ -344,7 +339,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100vh;
+            height: auto;
             //background-color: $secondColor;
             border-bottom: 2px solid black;
             gap: 6vh;
@@ -353,7 +348,7 @@ body {
                 color: black;
                 text-decoration: none;
                 font-size: 35px;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 padding: 10px 2%;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -430,16 +425,15 @@ body {
 
                         ul li {
                             text-align: center;
-
                             list-style-type: none;
-                            font-family: $typographyPoppins;
+                            font-family: $typographySometypeMono;
                             font-size: 20px;
                         }
 
                         a {
                             display: inline-block;
                             width: 100%;
-                            font-family: $typographyPoppins;
+                            font-family: $typographySometypeMono;
                             text-align: center;
                             text-decoration: none;
                             font-size: 20px;
@@ -472,7 +466,6 @@ body {
                 .scrolling-container::-webkit-scrollbar {
                     display: none;
                 }
-
             }
 
 
@@ -513,6 +506,20 @@ body {
                 visibility: collapse;
             }
 
+            .button-responsive {
+                display: flex;
+                //align-content: center;
+                justify-content: center;
+                gap: 0;
+
+                .scrolling-button_container {
+                    img {
+                        width: 0px;
+                        height: 0px;
+                    }
+                }
+            }
+
         }
 
         .contact-me {
@@ -527,7 +534,7 @@ body {
                 color: black;
                 text-decoration: none;
                 font-size: 35px;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 padding: 10px 0;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -724,7 +731,7 @@ body {
             .my-works {
                 flex-direction: column;
                 justify-content: space-around;
-                height: 100vh;
+                height: auto;
                 gap: 2vh;
 
                 .main-titles {
@@ -761,7 +768,6 @@ body {
 
                 .button-responsive {
                     display: flex;
-                    //align-content: center;
                     justify-content: center;
                     gap: 20px 50px;
 

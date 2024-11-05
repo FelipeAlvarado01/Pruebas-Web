@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="stylesheet" href="assets/src/styles.css">
+
     <script src="https://kit.fontawesome.com/b2a572fab6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <title>Hi!</title>
 </head>
 
 <body>
-
     <header class="three-container" id="three-container">
         <div class="main-menu">
             <div class="menu-burguer" id="menu-burguer">
                 <img src="assets/src/images/Icons/bars-solid.png" alt="">
             </div>
+
+            <span id="element"></span>
 
             <!--nav se muestra cuando se de click en en el menu hamburguesa-->
             <nav class="menu-content" id="menu-content">
@@ -36,7 +39,9 @@
                 </ul>
 
                 <div class="icon-section">
-
+                    <ul>
+                        <li><a href="https://github.com/FelipeAlvarado01"></a></li>
+                    </ul>
                 </div>
             </nav>
 
@@ -50,7 +55,9 @@
         </div>
 
         <div class="main-title">
-            <h4>System.out.println("Hello, World!");</h4>
+            <h4 id="first-sentence">
+                <span id="typed"></span>
+            </h4>
             <br>
             <h1>I'm</h1>
             <h1>Felipe Alvarado.</h1>
@@ -150,7 +157,7 @@
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
-                        <a href="https://felipealvarado01.github.io/Minecraft-Threejs/" class="redirect-link">VISIT</a>
+                        <a href="https://felipealvarado01.github.io/Coffee/" class="redirect-link">VISIT</a>
                     </div>
                     <div class="scrolling-card" id="scrolling-card" data-index="5">
                         <img src="assets/src/images/VideoFontPage/Simulacion_Nieve.png" alt="">
@@ -160,7 +167,6 @@
                         <ul>
                             <li>JavaScript</li>
                             <li>Three.js</li>
-                            <li>item 3</li>
                         </ul>
                         <a href="https://felipealvarado01.github.io/Simulacion-Nieve/" class="redirect-link">VISIT</a>
 
@@ -228,7 +234,7 @@
                         </div>
                     </form>
                 </div>
-                <p class="request-text" id="request-text">Thanks for visiting my website!</p>
+                <p class="request-text" id="request-text"><span id="typed-text-request"></span></p>
             </div>
         </section>
     </main>
@@ -237,10 +243,10 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="assets/src/js/HomeScript.js"></script>
     <script src="assets/src/js/BurgerMenu.js"></script>
     <script src="assets/src/js/ScrollBehavior.js"></script>
+    <script src="assets/src/js/TypedController.js"></script>
     <script type="module" src="assets/src/js/backThree.js"></script>
 </body>
 
