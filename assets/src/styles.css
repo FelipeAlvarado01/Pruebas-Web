@@ -532,9 +532,10 @@ body footer {
   display: flex;
   flex-direction: column;
   background-color: rgb(16, 26, 83);
-  height: 30vh;
+  height: 25vh;
   justify-content: space-between;
   align-items: center;
+  padding: 5px;
 }
 body footer .icon-section_footer ul {
   display: flex;
@@ -548,21 +549,25 @@ body footer .icon-section_footer ul li a {
   display: inline-block;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: none;
   text-decoration: none;
   height: auto;
 }
-body footer .icon-section_footer ul li a img {
+body footer .icon-section_footer ul li a i {
   margin-bottom: 10px;
-  width: 50px;
-  height: auto;
 }
 body footer .icon-section_footer ul li a p {
+  text-align: center;
   font-family: "Sometype Mono", "Arial Narrow Bold";
   color: white;
   font-size: 12px;
+}
+body footer hr {
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 0px 0;
 }
 body footer div, body footer .rights-text {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;

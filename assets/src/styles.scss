@@ -649,9 +649,10 @@ body {
         display: flex;
         flex-direction: column;
         background-color: rgb(16, 26, 83);
-        height: 30vh;
+        height: 25vh;
         justify-content: space-between;
         align-items: center;
+        padding: 5px;
 
         .icon-section_footer {
 
@@ -667,20 +668,16 @@ body {
                         display: inline-block;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
                         border: none;
                         text-decoration: none;
                         height: auto;
+                        
 
-                        img {
+                        i{
                             margin-bottom: 10px;
-                            width: 50px;
-                            height: auto;
-
                         }
-
                         p {
+                            text-align: center;
                             font-family: $typographySometypeMono;
                             color: white;
                             font-size: 12px;
@@ -689,14 +686,19 @@ body {
                 }
             }
         }
-
+        hr{
+            width: 60%;
+            height: 2px;
+            background-color: black;
+            border: none;
+            margin: 0px 0;
+        }
         div,.rights-text {
             font-family: $typographyPoppins;
             font-size: 12px;
             color: white;
             //text-align: center;
         }
-
     }
 }
 
