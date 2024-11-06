@@ -529,47 +529,45 @@ body main .contact-me .form-content .request-text {
   font-size: 5vw;
 }
 body footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(16, 26, 83);
-  height: 40vh;
-}
-body footer .icon-section_footer {
-  width: 100%;
-  align-content: center;
+  height: 30vh;
+  justify-content: space-between;
+  align-items: center;
 }
 body footer .icon-section_footer ul {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 10vh;
+  gap: 60px;
+  margin-top: 5vh;
 }
 body footer .icon-section_footer ul li {
   list-style-type: none;
 }
 body footer .icon-section_footer ul li a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   text-decoration: none;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
+  height: auto;
 }
 body footer .icon-section_footer ul li a img {
-  align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
   width: 50px;
+  height: auto;
 }
 body footer .icon-section_footer ul li a p {
-  text-align: center;
   font-family: "Sometype Mono", "Arial Narrow Bold";
   color: white;
-  font-size: 10px;
+  font-size: 12px;
 }
-body footer .icon-section_footer .rights-text {
+body footer div, body footer .rights-text {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   color: white;
-  text-align: center;
-  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
