@@ -568,6 +568,7 @@ body footer hr {
   background-color: black;
   border: none;
   margin: 0px 0;
+  text-align: center;
 }
 body footer div, body footer .rights-text {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
