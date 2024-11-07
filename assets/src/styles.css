@@ -431,6 +431,7 @@ body main .contact-me {
   flex-direction: column;
   height: 100vh;
   padding: 0 2%;
+  border-bottom: 2px solid black;
 }
 body main .contact-me .main-titles {
   color: black;
