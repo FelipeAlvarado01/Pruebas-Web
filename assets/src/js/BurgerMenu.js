@@ -34,4 +34,11 @@ contactMe.addEventListener('click', () => {
   document.getElementById('menu-content').classList.remove('visible');
 });
 
+const mySocials = document.querySelector('#my-social_button a');
+
+mySocials.addEventListener('click', () => {
+  const mySocialSection = document.getElementById('my-socials');
+  mySocialSection.scrollIntoView({behavior: 'smooth'});
+  document.getElementById('menu-content').classList.remove('visible');
+});
 

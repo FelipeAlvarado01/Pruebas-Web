@@ -87,5 +87,4 @@ if(screenSize > 650){
     buttonResponsive.classList.add("visible");
 }
 
-/*-----------------------------REDIRECCIONAMIENTO A OTROS LINKS------------------------------------*/
 
