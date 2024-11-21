@@ -4,15 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*html {
-    scroll-behavior: smooth;
-}*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   display: flex;
@@ -69,6 +71,7 @@ body .three-container .main-menu .menu-content {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
   position: absolute;
   padding: 10px;
   width: 50vw;
@@ -127,6 +130,16 @@ body .three-container .main-menu .menu-content ul li:hover {
   background-color: rgba(242, 242, 240, 0.2);
   cursor: pointer;
 }
+body .three-container .main-menu .menu-content .icon-section ul {
+  display: flex;
+  gap: 50px;
+}
+body .three-container .main-menu .menu-content .icon-section ul li,
+body .three-container .main-menu .menu-content .icon-section ul a,
+body .three-container .main-menu .menu-content .icon-section ul img {
+  justify-content: center;
+  width: 50px;
+}
 body .three-container .main-menu .switch-changes_color {
   z-index: 3;
 }
@@ -181,7 +194,7 @@ body .three-container .main-title h1 {
   color: white;
   text-align: center;
   font-size: 8vw;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
 }
 body .three-container .down-button {
@@ -223,8 +236,8 @@ body main .my-description {
 body main .my-description .main-titles {
   color: black;
   text-decoration: none;
-  font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 0;
   /*text-shadow:
       -2px -2px 2px black,
@@ -242,21 +255,13 @@ body main .my-description .description-container {
   width: 100%;
 }
 body main .my-description .description-container img {
-  width: 40%;
+  width: 35%;
   border-radius: 50%;
   border: 2px solid black;
-}
-body main .my-description .description-container p {
-  width: 50%;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
-  font-size: 1rem;
-  padding: 1rem;
-  color: black;
 }
 body main .my-description .description-container table,
 body main .my-description .description-container th,
 body main .my-description .description-container td {
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 2rem;
   padding: 1rem;
   margin: 0 0 0 1vw;
@@ -265,9 +270,11 @@ body main .my-description .description-container td {
   border-collapse: collapse;
 }
 body main .my-description .description-container td {
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   background-color: rgb(230, 223, 223);
 }
 body main .my-description .description-container th {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   color: white;
   background-color: rgb(33, 50, 146);
 }
@@ -275,7 +282,7 @@ body main .my-works {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: auto;
   border-bottom: 2px solid black;
   gap: 6vh;
 }
@@ -283,7 +290,7 @@ body main .my-works .main-titles {
   color: black;
   text-decoration: none;
   font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 2%;
   /*text-shadow:
       -2px -2px 2px black,
@@ -350,13 +357,13 @@ body main .my-works .works-slider .scrolling-container .scrolling-card hr {
 body main .my-works .works-slider .scrolling-container .scrolling-card ul li {
   text-align: center;
   list-style-type: none;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   font-size: 20px;
 }
 body main .my-works .works-slider .scrolling-container .scrolling-card a {
   display: inline-block;
   width: 100%;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -385,7 +392,6 @@ body main .my-works .works-slider .scrolling-container::-webkit-scrollbar {
 body main .my-works .content-slider {
   display: flex;
   justify-content: center;
-  margin: 2% 0 5% 0;
   gap: 0 7px;
 }
 body main .my-works .content-slider .dot {
@@ -411,17 +417,27 @@ body main .my-works .content-slider .dot.active:hover {
 body main .my-works .button-responsive.visible {
   visibility: collapse;
 }
+body main .my-works .button-responsive {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+body main .my-works .button-responsive .scrolling-button_container img {
+  width: 0px;
+  height: 0px;
+}
 body main .contact-me {
   display: flex;
   flex-direction: column;
   height: 100vh;
   padding: 0 2%;
+  border-bottom: 2px solid black;
 }
 body main .contact-me .main-titles {
   color: black;
   text-decoration: none;
   font-size: 35px;
-  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
   padding: 10px 0;
   /*text-shadow:
       -2px -2px 2px black,
@@ -513,6 +529,53 @@ body main .contact-me .form-content .request-text {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   font-size: 5vw;
 }
+body footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 26, 83);
+  height: 25vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+body footer .icon-section_footer ul {
+  display: flex;
+  gap: 60px;
+  margin-top: 5vh;
+}
+body footer .icon-section_footer ul li {
+  list-style-type: none;
+}
+body footer .icon-section_footer ul li a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  text-decoration: none;
+  height: auto;
+}
+body footer .icon-section_footer ul li a i {
+  margin-bottom: 10px;
+}
+body footer .icon-section_footer ul li a p {
+  text-align: center;
+  font-family: "Sometype Mono", "Arial Narrow Bold";
+  color: white;
+  font-size: 12px;
+}
+body footer hr {
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 0px 0;
+}
+body footer div, body footer .rights-text {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
 
 @media (max-width: 1024px) {
   body main .my-works .works-slider .scrolling-container .scrolling-card {
@@ -586,7 +649,7 @@ body main .contact-me .form-content .request-text {
   body main .my-works {
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: auto;
     gap: 2vh;
   }
   html main .my-works .main-titles,
@@ -622,6 +685,10 @@ body main .contact-me .form-content .request-text {
     display: flex;
     justify-content: center;
     gap: 20px 50px;
+  }
+  html main .my-works .button-responsive .scrolling-button_container,
+  body main .my-works .button-responsive .scrolling-button_container {
+    margin: 20px 20px;
   }
   html main .my-works .button-responsive .scrolling-button_container img,
   body main .my-works .button-responsive .scrolling-button_container img {

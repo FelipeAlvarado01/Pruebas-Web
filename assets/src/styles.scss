@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 $typographyPoppins: 'Poppins', 'Arial Narrow Bold', sans-serif;
 $typographyInter: 'Inter', 'Arial Narrow Bold', sans-serif;
 $typographyRoboto: 'Roboto', 'Arial Narrow Bold', sans-serif;
 $typographyPlayfairDisplay: 'Playfair+Display', 'Arial Narrow Bold', sans-serif;
+$typographySometypeMono: 'Sometype Mono', 'Arial Narrow Bold';
 
 $secondColor: white;
 
@@ -18,10 +19,9 @@ $secondColor: white;
     box-sizing: border-box;
 }
 
-/*html {
+html {
     scroll-behavior: smooth;
-}*/
-
+}
 
 body {
     width: 100%;
@@ -86,6 +86,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
+                justify-content: space-between;
                 position: absolute;
                 padding: 10px;
                 width: 50vw;
@@ -154,6 +155,21 @@ body {
                     li:hover {
                         background-color: rgb(242, 242, 240, 0.2);
                         cursor: pointer;
+                    }
+                }
+
+                .icon-section {
+                    ul {
+                        display: flex;
+                        gap: 50px;
+
+                        li,
+                        a,
+                        img {
+                            justify-content: center;
+                            width: 50px;
+                        }
+
                     }
                 }
             }
@@ -228,7 +244,7 @@ body {
                 color: white;
                 text-align: center;
                 font-size: 8vw;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 text-shadow:
                     -2px -2px 0px black,
                     2px -2px 0px black,
@@ -284,8 +300,8 @@ body {
             .main-titles {
                 color: black;
                 text-decoration: none;
-                font-size: 35px;
-                font-family: $typographyPoppins;
+                font-size: 40px;
+                font-family: $typographySometypeMono;
                 padding: 10px 0;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -304,23 +320,15 @@ body {
                 width: 100%;
 
                 img {
-                    width: 40%;
+                    width: 35%;
                     border-radius: 50%;
                     border: 2px solid black;
                 }
 
-                p {
-                    width: 50%;
-                    font-family: $typographyPoppins;
-                    font-size: 1rem;
-                    padding: 1rem;
-                    color: black;
-                }
 
                 table,
                 th,
                 td {
-                    font-family: $typographyPoppins;
                     font-size: 2rem;
                     padding: 1rem;
                     margin: 0 0 0 1vw;
@@ -330,10 +338,13 @@ body {
                 }
 
                 td {
+                    font-family: $typographySometypeMono;
+                    //color: red;
                     background-color: rgb(230, 223, 223);
                 }
 
                 th {
+                    font-family: $typographyPoppins;
                     color: white;
                     background-color: rgb(33, 50, 146);
                 }
@@ -344,7 +355,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100vh;
+            height: auto;
             //background-color: $secondColor;
             border-bottom: 2px solid black;
             gap: 6vh;
@@ -353,7 +364,7 @@ body {
                 color: black;
                 text-decoration: none;
                 font-size: 35px;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 padding: 10px 2%;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -430,22 +441,20 @@ body {
 
                         ul li {
                             text-align: center;
-
                             list-style-type: none;
-                            font-family: $typographyPoppins;
+                            font-family: $typographySometypeMono;
                             font-size: 20px;
                         }
 
                         a {
                             display: inline-block;
                             width: 100%;
-                            font-family: $typographyPoppins;
+                            font-family: $typographySometypeMono;
                             text-align: center;
                             text-decoration: none;
                             font-size: 20px;
                             border-radius: 5px;
                             border: none;
-                            //margin-top: px;
                             padding: 5px 10px;
                             border: 2px solid black;
                             background-color: white;
@@ -472,21 +481,16 @@ body {
                 .scrolling-container::-webkit-scrollbar {
                     display: none;
                 }
-
             }
-
 
             .content-slider {
                 display: flex;
                 justify-content: center;
-                margin: 2% 0 5% 0;
-                //margin-bottom: 5%;
                 gap: 0 7px;
 
                 .dot {
                     height: 15px;
                     width: 15px;
-                    //margin: 0 5px;
                     background-color: rgb(187, 187, 187);
                     border-radius: 50%;
                     display: inline-block;
@@ -513,6 +517,19 @@ body {
                 visibility: collapse;
             }
 
+            .button-responsive {
+                display: flex;
+                justify-content: center;
+                gap: 0;
+
+                .scrolling-button_container {
+                    img {
+                        width: 0px;
+                        height: 0px;
+                    }
+                }
+            }
+
         }
 
         .contact-me {
@@ -520,6 +537,8 @@ body {
             flex-direction: column;
             height: 100vh;
             padding: 0 2%;
+            border-bottom: 2px solid black;
+
             //gap: 20px;
             //background-color: $secondColor;
 
@@ -527,7 +546,7 @@ body {
                 color: black;
                 text-decoration: none;
                 font-size: 35px;
-                font-family: $typographyPoppins;
+                font-family: $typographySometypeMono;
                 padding: 10px 0;
                 /*text-shadow:
                     -2px -2px 2px black,
@@ -627,6 +646,62 @@ body {
             }
         }
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(16, 26, 83);
+        height: 25vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+
+        .icon-section_footer {
+
+            ul {
+                display: flex;
+                gap: 60px;
+                margin-top: 5vh;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        display: inline-block;
+                        display: flex;
+                        flex-direction: column;
+                        border: none;
+                        text-decoration: none;
+                        height: auto;
+                        
+
+                        i{
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            text-align: center;
+                            font-family: $typographySometypeMono;
+                            color: white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        hr{
+            width: 60%;
+            height: 2px;
+            background-color: black;
+            border: none;
+            margin: 0px 0;
+        }
+        div,.rights-text {
+            font-family: $typographyPoppins;
+            font-size: 12px;
+            color: white;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -724,7 +799,7 @@ body {
             .my-works {
                 flex-direction: column;
                 justify-content: space-around;
-                height: 100vh;
+                height: auto;
                 gap: 2vh;
 
                 .main-titles {
@@ -761,15 +836,15 @@ body {
 
                 .button-responsive {
                     display: flex;
-                    //align-content: center;
                     justify-content: center;
                     gap: 20px 50px;
 
                     .scrolling-button_container {
+                        margin: 20px 20px;
+
                         img {
                             width: 50px;
                             height: 50px;
-                            //margin: 0 20px;
                         }
 
                         img:hover {

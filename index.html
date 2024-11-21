@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="stylesheet" href="assets/src/styles.css">
+
     <script src="https://kit.fontawesome.com/b2a572fab6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <title>Hi!</title>
 </head>
 
 <body>
-
     <header class="three-container" id="three-container">
         <div class="main-menu">
             <div class="menu-burguer" id="menu-burguer">
                 <img src="assets/src/images/Icons/bars-solid.png" alt="">
             </div>
+
+            <span id="element"></span>
 
             <!--nav se muestra cuando se de click en en el menu hamburguesa-->
             <nav class="menu-content" id="menu-content">
@@ -33,10 +36,27 @@
                     <hr>
                     <li id="contact_button"><a href="#">Contact</a></li>
                     <hr>
+                    <br>
+                    <br>
+                    <hr>
+                    <li id="my-social_button"><a href="#">My Socials</a></li>
+                    <hr>
                 </ul>
 
                 <div class="icon-section">
-
+                    <ul>
+                        <li>
+                            <a href="https://github.com/FelipeAlvarado01" target="_blank" rel="noopener noreferrer">
+                                <img class="icon-image" src="assets/src/images/Icons/github-brands-solid.png"
+                                    alt="GitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:afvalvarado@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/src/images/Icons/mail.png" alt="email">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
@@ -50,7 +70,9 @@
         </div>
 
         <div class="main-title">
-            <h4>System.out.println("Hello, World!");</h4>
+            <h4 id="first-sentence">
+                <span id="typed"></span>
+            </h4>
             <br>
             <h1>I'm</h1>
             <h1>Felipe Alvarado.</h1>
@@ -66,7 +88,7 @@
         <section class="my-description" id="my-description">
             <p class="main-titles">About Me</p>
             <div class="description-container">
-                <img class="my-photo" src="assets/src/images/MyPhoto.jpg" alt="">
+                <img class="my-photo" src="assets/src/images/MyPhoto.png" alt="">
                 <table>
                     <tr>
                         <th>Age</th>
@@ -110,7 +132,8 @@
                         <ul>
                             <li>Web</li>
                             <li>JavaScript</li>
-                            <li>Three.js</li>                        </ul>
+                            <li>Three.js</li>
+                        </ul>
                         <a href="https://felipealvarado01.github.io/Minecraft-Threejs/" class="redirect-link">VISIT</a>
                     </div>
 
@@ -150,7 +173,7 @@
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
-                        <a href="https://felipealvarado01.github.io/Minecraft-Threejs/" class="redirect-link">VISIT</a>
+                        <a href="https://felipealvarado01.github.io/Coffee/" class="redirect-link">VISIT</a>
                     </div>
                     <div class="scrolling-card" id="scrolling-card" data-index="3">
                         <img src="assets/src/images/VideoFontPage/Simulacion_Nieve.png" alt="">
@@ -160,7 +183,6 @@
                         <ul>
                             <li>JavaScript</li>
                             <li>Three.js</li>
-                            <li>item 3</li>
                         </ul>
                         <a href="https://felipealvarado01.github.io/Simulacion-Nieve/" class="redirect-link">VISIT</a>
 
@@ -228,19 +250,42 @@
                         </div>
                     </form>
                 </div>
-                <p class="request-text" id="request-text">Thanks for visiting my website!</p>
+                <p class="request-text" id="request-text"><span id="typed-text-request"></span></p>
             </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer id="my-socials">
+        <div class="icon-section_footer">
+            <ul>
+                <li>
+                    <a href="https://github.com/FelipeAlvarado01" target="_blank" rel="noopener noreferrer">
+                        <!--<img class="icon-image" src="assets/src/images/Icons/github-brands-solid-white.png"
+                            alt="GitHub">-->
+                        <i class="fa-brands fa-github fa-4x" style="color: #ffffff;"></i>
+                        <p>GitHub</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:afvalvarado@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <!--<img src="assets/src/images/Icons/mailWhite.png" alt="email">-->
+                        <i class="fa-solid fa-envelope fa-4x" style="color: #ffffff;"></i>
+                        <p>Email</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <p class="rights-text">© 2024 Felipe Alvarado. Todos los derechos reservados. Este portafolio y sus imagenes
+                son propiedad de Felipe Alvarado.</p>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="assets/src/js/HomeScript.js"></script>
     <script src="assets/src/js/BurgerMenu.js"></script>
     <script src="assets/src/js/ScrollBehavior.js"></script>
+    <script src="assets/src/js/TypedController.js"></script>
     <script type="module" src="assets/src/js/backThree.js"></script>
 </body>
 
