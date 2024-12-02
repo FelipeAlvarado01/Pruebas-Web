@@ -3,7 +3,7 @@ const bot = document.querySelectorAll("#dot");
 const leftButton = document.querySelectorAll("#scrolling-button_left");
 const rightButton = document.querySelectorAll("#scrolling-button_right");
 const scrollingContainer = document.querySelector("#scrolling-container");
-let cardSelected = 2;//La primera carta en mostrarse
+let cardSelected = 3;//La primera carta en mostrarse
 
 centerCard(cardSelected);
 
